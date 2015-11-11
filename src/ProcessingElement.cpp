@@ -9,6 +9,7 @@
  */
 
 #include "ProcessingElement.h"
+#include "myParam.h"
 
 int ProcessingElement::randInt(int min, int max)
 {
@@ -18,6 +19,8 @@ int ProcessingElement::randInt(int min, int max)
 
 void ProcessingElement::rxProcess()
 {
+    if(globalTraceProcessingElement==true) { cout<<"ProcessingElement::rxProcess"<<endl;}
+
     if (reset.read()) {
 	ack_rx.write(0);
 	current_level_rx = 0;
@@ -32,6 +35,8 @@ void ProcessingElement::rxProcess()
 
 void ProcessingElement::txProcess()
 {
+    if(globalTraceProcessingElement==true) { cout<<"ProcessingElement::txProcess"<<endl;}
+
     if (reset.read()) {
 	req_tx.write(0);
 	current_level_tx = 0;
@@ -59,6 +64,9 @@ void ProcessingElement::txProcess()
 
 Flit ProcessingElement::nextFlit()
 {
+
+    if(globalTraceProcessingElement==true) { cout<<"ProcessingElement:: nextFlit"<<endl;}  
+
     Flit flit;
     Packet packet = packet_queue.front();
 
@@ -86,6 +94,8 @@ Flit ProcessingElement::nextFlit()
 
 bool ProcessingElement::canShot(Packet & packet)
 {
+    if(globalTraceProcessingElement==true) { cout<<"ProcessingElement:: canShot"<<endl;}  
+
     bool shot;
     double threshold;
 
@@ -145,6 +155,8 @@ bool ProcessingElement::canShot(Packet & packet)
 
 Packet ProcessingElement::trafficLocal()
 {
+    if(globalTraceProcessingElement==true) { cout<<"ProcessingElement:: trafficLocal"<<endl;}  
+
     Packet p;
     p.src_id = local_id;
     double rnd = rand() / (double) RAND_MAX;
@@ -179,6 +191,8 @@ Packet ProcessingElement::trafficLocal()
 
 Packet ProcessingElement::trafficRandom()
 {
+    if(globalTraceProcessingElement==true) { cout<<"ProcessingElement:: trafficRandom"<<endl;}  
+
     Packet p;
     p.src_id = local_id;
     double rnd = rand() / (double) RAND_MAX;
@@ -213,6 +227,8 @@ Packet ProcessingElement::trafficRandom()
 // TODO: for testing only
 Packet ProcessingElement::trafficTest()
 {
+    if(globalTraceProcessingElement==true) { cout<<"ProcessingElement:: trafficTest"<<endl;}  
+
     Packet p;
     p.src_id = local_id;
     p.dst_id = 10;
@@ -225,6 +241,8 @@ Packet ProcessingElement::trafficTest()
 
 Packet ProcessingElement::trafficTranspose1()
 {
+    if(globalTraceProcessingElement==true) { cout<<"ProcessingElement:: trafficTranspose 1"<<endl;}  
+
     Packet p;
     p.src_id = local_id;
     Coord src, dst;
@@ -245,6 +263,8 @@ Packet ProcessingElement::trafficTranspose1()
 
 Packet ProcessingElement::trafficTranspose2()
 {
+    if(globalTraceProcessingElement==true) { cout<<"ProcessingElement:: trafficTranspose 2"<<endl;}  
+
     Packet p;
     p.src_id = local_id;
     Coord src, dst;
@@ -265,6 +285,8 @@ Packet ProcessingElement::trafficTranspose2()
 
 void ProcessingElement::setBit(int &x, int w, int v)
 {
+    if(globalTraceProcessingElement==true) { cout<<"ProcessingElement:: setBit"<<endl;}  
+
     int mask = 1 << w;
 
     if (v == 1)
@@ -287,6 +309,7 @@ inline double ProcessingElement::log2ceil(double x)
 
 Packet ProcessingElement::trafficBitReversal()
 {
+    if(globalTraceProcessingElement==true) { cout<<"ProcessingElement:: trafficBitReversal"<<endl;}  
 
     int nbits =
 	(int)
@@ -310,6 +333,8 @@ Packet ProcessingElement::trafficBitReversal()
 Packet ProcessingElement::trafficShuffle()
 {
 
+    if(globalTraceProcessingElement==true) { cout<<"ProcessingElement:: trafficShuffle"<<endl;}  
+
     int nbits =
 	(int)
 	log2ceil((double)
@@ -332,6 +357,7 @@ Packet ProcessingElement::trafficShuffle()
 
 Packet ProcessingElement::trafficButterfly()
 {
+    if(globalTraceProcessingElement==true) { cout<<"ProcessingElement:: trafficButterfly"<<endl;}  
 
     int nbits =
 	(int)

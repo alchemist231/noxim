@@ -13,6 +13,8 @@
 #include "Utils.h"
 #include "systemc.h"
 
+#include "myParam.h"
+
 #define W2J(watt) ((watt)*GlobalParams::clock_period_ps*1.0e-12)
 
 using namespace std;
@@ -20,6 +22,8 @@ using namespace std;
 
 Power::Power()
 {
+    if(globalTracePower==true){cout<<"Power constructor invoked "<<endl;}
+
     total_power_s = 0.0;
 
     buffer_router_push_pwr_d = 0.0;
@@ -80,6 +84,8 @@ void Power::configureRouter(int link_width,
 	string routing_function,
 	string selection_function)
 {
+    if(globalTracePower==true) { cout<<"Power::configureRouter invoked"<<endl;}
+
 // (s)tatic, (d)ynamic power
 
     // Buffer 
@@ -143,6 +149,8 @@ void Power::configureHub(int link_width,
 	int antenna_buffer_item_size,
 	int data_rate_gbs)
 {
+    if(globalTracePower==true) { cout<<"Power::configureHub invoked"<<endl;}
+
 // (s)tatic, (d)ynamic power
 
     // Buffer 

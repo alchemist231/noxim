@@ -18,6 +18,7 @@
 #include "Hub.h"
 #include "Channel.h"
 #include "TokenRing.h"
+#include "myParam.h"
 
 using namespace std;
 
@@ -71,10 +72,14 @@ SC_MODULE(NoC)
 
 
     // Constructor
+    void printNOC()
+    {
+        if(globalTrace==true){cout<<"NoC constructor called"<<endl;}
+    }
 
     SC_CTOR(NoC) {
 
-
+    printNOC();
 	// Build the Mesh
 	buildMesh();
     }

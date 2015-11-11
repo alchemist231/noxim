@@ -9,11 +9,14 @@
  */
 
 #include "GlobalStats.h"
+#include "myParam.h"
 using namespace std;
 
 GlobalStats::GlobalStats(const NoC * _noc)
 {
     noc = _noc;
+
+    if(globalTraceGlobalStats==true) { cout<<"GlobalStats initialised"<<endl; }
 
 #ifdef TESTING
     drained_total = 0;

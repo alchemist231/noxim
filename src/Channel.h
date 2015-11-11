@@ -10,6 +10,7 @@
 #include "tlm_utils/multi_passthrough_target_socket.h"
 #include "tlm_utils/peq_with_cb_and_phase.h"
 #include <queue>
+#include "myParam.h"
 
 using namespace sc_core;
 using namespace std;
@@ -55,6 +56,8 @@ struct Channel: sc_module
     flit_transmission_cycles = ceil(((double)flit_transmission_delay_ps/GlobalParams::clock_period_ps));
 
     LOG << "data rate " << GlobalParams::channel_configuration[local_id].dataRate << " Gbps, transmission delay " << flit_transmission_delay_ps << " ps, " << flit_transmission_cycles << " cycles " << endl; 
+
+    if(globalTraceChannel==true) { cout<<"Channel  created"<<endl; }
 
   }
 

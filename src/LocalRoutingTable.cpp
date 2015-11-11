@@ -9,14 +9,22 @@
  */
 
 #include "LocalRoutingTable.h"
+#include "myParam.h"
 
 LocalRoutingTable::LocalRoutingTable()
 {
+	if(globalTraceLocalRoutingTable==true) 
+		{
+			globalTraceLocalRoutingTableCount++;  
+			cout<<"Local Routing Table instantiated: "<<globalTraceLocalRoutingTableCount<<endl; 
+		}
 }
 
 void LocalRoutingTable::configure(GlobalRoutingTable & rtable,
 				       const int _node_id)
 {
+	if(globalTraceLocalRoutingTable==true){ cout<<"configuring local routing table"<<endl;}
+	
     rt_node = rtable.getNodeRoutingTable(_node_id);
     node_id = _node_id;
 }

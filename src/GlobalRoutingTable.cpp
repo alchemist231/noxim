@@ -9,6 +9,8 @@
  */
 
 #include "GlobalRoutingTable.h"
+#include "myParam.h"
+
 using namespace std;
 
 LinkId direction2ILinkId(const int node_id, const int dir)
@@ -79,11 +81,14 @@ vector <
 GlobalRoutingTable::GlobalRoutingTable()
 {
     valid = false;
+    if(globalTraceRoutingTable==true) { cout<<"Global Routing Table created "<<endl;}
 }
 
 bool GlobalRoutingTable::load(const char *fname)
 {
     ifstream fin(fname, ios::in);
+
+    if(globalTraceRoutingTable==true) { cout<<"Loading global Routing table: "<<fname<<endl;}
 
     if (!fin)
 	return false;
@@ -125,8 +130,53 @@ bool GlobalRoutingTable::load(const char *fname)
     return true;
 }
 
+
+
+void printSet(set<LinkId> mySet)     // set of admissibleOutputs => pair of int,int
+{
+	cout<<"printing admissible outputs"<<endl;
+	for(set<LinkId> :: iterator iter=mySet.begin() ; iter!=mySet.end(); iter++)
+	{
+		cout<<iter->first<<" "<<iter->second<<endl;
+	}
+}
+
+void printRoutingTableLink(RoutingTableLink rt_link)		//map<int, Admissible_outputs(==>set(LinkIds))
+{
+	cout<<"printing RoutingTableLink"<<endl;
+	for(RoutingTableLink :: iterator iter=rt_link.begin(); iter!=rt_link.end(); iter++)
+	{
+		cout<<iter->first<<" : ";
+		//printSet(iter->second);
+	}
+}
+
+void printRoutingTableNode(RoutingTableNode rt_node)		//map(LinkId,RoutingTableLink)
+{
+	for(RoutingTableNode :: iterator iter=rt_node.begin(); iter!=rt_node.end(); iter++)
+	{
+		//printSet(iter->first);
+		printRoutingTableLink(iter->second);
+	}
+}
+
+
+
+void printRoutingTableNoC(RoutingTableNoC rt_noc )
+{
+	cout<<"printing rt_noc"<<endl;
+	for(RoutingTableNoC :: iterator iter=rt_noc.begin(); iter!=rt_noc.end(); iter++)
+	{
+		cout<<iter->first<<" : ";
+		printRoutingTableNode(iter->second);
+	}
+}
+
 RoutingTableNode GlobalRoutingTable::
 getNodeRoutingTable(const int node_id)
 {
+	if(globalTraceRoutingTable==true)
+		{printRoutingTableNoC(rt_noc);}
+
     return rt_noc[node_id];
 }

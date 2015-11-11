@@ -9,9 +9,11 @@
  */
 
 #include "NoC.h"
+#include "myParam.h"
 
 void NoC::buildMesh()
 {
+	if(globalTraceNoC==true) {cout<<"NoC::buildMesh invoked"<<endl;}
 
     token_ring = new TokenRing("tokenring");
     token_ring->clock(clock);
@@ -323,6 +325,8 @@ void NoC::buildMesh()
 
 Tile *NoC::searchNode(const int id) const
 {
+	if(globalTraceNoC==true) { cout<<"NoC::searchNode called ==> return type Tile"<<endl;}
+
     for (int i = 0; i < GlobalParams::mesh_dim_x; i++)
 	for (int j = 0; j < GlobalParams::mesh_dim_y; j++)
 	    if (t[i][j]->r->local_id == id)

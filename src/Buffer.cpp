@@ -10,6 +10,7 @@
 
 #include "Buffer.h"
 #include "Utils.h"
+#include "myParam.h"
 
 Buffer::Buffer()
 {
@@ -23,6 +24,10 @@ Buffer::Buffer()
   true_buffer = true;
   full_cycles_counter = 0;
   last_front_flit_seq = NOT_VALID;
+
+  if(globalTraceBuffer==true)
+    {globalTraceBufferCount++;
+     cout<<"Buffer constructed: "<<globalTraceBufferCount<<endl;}
 }
 
 void Buffer::Print(const char *prefix)

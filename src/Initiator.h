@@ -7,6 +7,8 @@
 #include "DataStructs.h"
 #include "Buffer.h"
 
+#include "myParam.h"
+
 
 
 using namespace sc_core;
@@ -32,6 +34,7 @@ struct Initiator: sc_module
   {
 
       if (GlobalParams::use_winoc) SC_THREAD(thread_process);
+      if (globalTraceInitiator==true) {cout<<"Initiator.h invoked"<<endl;}
   }
 
   void thread_process();

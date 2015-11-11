@@ -9,9 +9,11 @@
  */
 
 #include "GlobalTrafficTable.h"
+#include "myParam.h"
 
 GlobalTrafficTable::GlobalTrafficTable()
 {
+	if(globalTraceTrafficTable==true) { cout<<"GlobalTrafficTable created"<<endl; }
 }
 
 bool GlobalTrafficTable::load(const char *fname)

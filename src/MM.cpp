@@ -1,7 +1,11 @@
 #include "MM.h"
+#include "myParam.h"
+using namespace std;
 
 mm::gp_t* mm::allocate()
 {
+  if(globalTraceMm==true) { cout<<"mm::allocate called"<<endl;}
+
   gp_t* ptr;
   if (free_list)
   {
@@ -18,6 +22,9 @@ mm::gp_t* mm::allocate()
 
 void mm::free(gp_t* trans)
 {
+
+  if(globalTraceMm==true) { cout<<"mm::free called"<<endl;}
+
   if (!empties)
   {
     empties = new access;

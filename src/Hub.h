@@ -22,6 +22,8 @@
 #include "TokenRing.h"
 #include "Power.h"
 
+#include "myParam.h"
+
 using namespace std;
 
 SC_MODULE(Hub)
@@ -87,8 +89,18 @@ SC_MODULE(Hub)
     map<int,int> buffer_to_tile_sleep_cycles;
 
     // Constructor
+    void constructorPrint()
+    {
+        if(globalTraceHub==true)
+        {
+            globalTraceHubCount++;
+            cout<<"Hub: "<<globalTraceHubCount<<endl;
+        }
+    }
 
     Hub(sc_module_name nm, int id, TokenRing * tr): sc_module(nm) {
+
+    constructorPrint();
 
 	if (GlobalParams::use_winoc)
 	{
