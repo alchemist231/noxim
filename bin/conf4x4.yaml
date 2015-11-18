@@ -144,7 +144,7 @@ trace_filename: "trace_1"
 
 min_packet_size: 8
 max_packet_size: 8
-packet_injection_rate: 0.01
+packet_injection_rate: 0.02
 probability_of_retransmission: 0.01
 
 # Traffic distribution:
@@ -156,10 +156,10 @@ probability_of_retransmission: 0.01
 #   TRAFFIC_BIT_REVERSAL
 #   TRAFFIC_SHUFFLE
 #   TRAFFIC_BUTTERFLY
-traffic_distribution: TRAFFIC_BUTTERFLY
+traffic_distribution: TRAFFIC_TABLE_BASED
 # when traffic table based is specified, use the following
 # configuration file
-traffic_table_filename: "t.txt"
+traffic_table_filename: "testTraffic.txt"
 
 
 Energy:

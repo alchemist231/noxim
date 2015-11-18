@@ -24,6 +24,7 @@ bool GlobalTrafficTable::load(const char *fname)
     return false;
 
   // Initialize variables
+  cout<<"traffic from file"<<endl;
   traffic_table.clear();
 
   // Cycle reading file

@@ -61,6 +61,11 @@ struct Packet {
 	flit_left = sz;
 	use_low_voltage_path = false;
     }
+
+    void printPacket()
+    {
+        cout<<"Packet:: Src: "<<src_id<<" Dst: "<<dst_id<<" TimeStamp: "<<timestamp<<" Size: "<<size<<" Flit-Left: "<<flit_left<<endl;
+    }
 };
 
 // RouteData -- data required to perform routing
@@ -69,6 +74,9 @@ struct RouteData {
     int src_id;
     int dst_id;
     int dir_in;			// direction from which the packet comes from
+
+    void printRouteData(){cout<<"RouteData src:";}
+
 };
 
 struct ChannelStatus {

@@ -4,6 +4,7 @@ RoutingAlgorithmsMap * RoutingAlgorithms::routingAlgorithmsMap = 0;
 
 RoutingAlgorithm * RoutingAlgorithms::get(const string & routingAlgorithmName) {
 	RoutingAlgorithmsMap::iterator it = getRoutingAlgorithmsMap()->find(routingAlgorithmName);
+	cout<<"RoutingAlgorithms::get "<<routingAlgorithmName<<endl;
 
 	if(it == getRoutingAlgorithmsMap()->end())
 		return 0;

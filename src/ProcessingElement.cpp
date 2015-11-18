@@ -19,7 +19,7 @@ int ProcessingElement::randInt(int min, int max)
 
 void ProcessingElement::rxProcess()
 {
-    if(globalTraceProcessingElement==true) { cout<<"ProcessingElement::rxProcess"<<endl;}
+    //if(globalTraceProcessingElement==true ) { cout<<"ProcessingElement::rxProcess"<<endl;}
 
     if (reset.read()) {
 	ack_rx.write(0);
@@ -35,7 +35,7 @@ void ProcessingElement::rxProcess()
 
 void ProcessingElement::txProcess()
 {
-    if(globalTraceProcessingElement==true) { cout<<"ProcessingElement::txProcess"<<endl;}
+    //if(globalTraceProcessingElement==true) { cout<<"ProcessingElement::txProcess"<<endl;}
 
     if (reset.read()) {
 	req_tx.write(0);
@@ -65,10 +65,12 @@ void ProcessingElement::txProcess()
 Flit ProcessingElement::nextFlit()
 {
 
-    if(globalTraceProcessingElement==true) { cout<<"ProcessingElement:: nextFlit"<<endl;}  
+    //if(globalTraceProcessingElement==true) { cout<<"ProcessingElement:: nextFlit"<<endl;}  
 
     Flit flit;
     Packet packet = packet_queue.front();
+
+    if(globalTraceProcessingElement==true) { packet.printPacket();}
 
     flit.src_id = packet.src_id;
     flit.dst_id = packet.dst_id;
@@ -94,7 +96,7 @@ Flit ProcessingElement::nextFlit()
 
 bool ProcessingElement::canShot(Packet & packet)
 {
-    if(globalTraceProcessingElement==true) { cout<<"ProcessingElement:: canShot"<<endl;}  
+    //if(globalTraceProcessingElement==true) { cout<<"ProcessingElement:: canShot"<<endl;}  
 
     bool shot;
     double threshold;
@@ -124,7 +126,7 @@ bool ProcessingElement::canShot(Packet & packet)
         else if (GlobalParams::traffic_distribution == TRAFFIC_LOCAL)
 		    packet = trafficLocal();
         else
-		    assert(false);
+		    {cout<<"assertion failed: "<<shot<<endl;assert(false);}
 	}
     } else {			// Table based communication traffic
 	if (never_transmit)

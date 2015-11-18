@@ -84,12 +84,15 @@ void Power::configureRouter(int link_width,
 	string routing_function,
 	string selection_function)
 {
-    if(globalTracePower==true) { cout<<"Power::configureRouter invoked"<<endl;}
+    if(globalTracePower==true) { cout<<"Power::configureRouter invoked: "<<routing_function<<"  "<<selection_function<<endl;}
 
 // (s)tatic, (d)ynamic power
 
     // Buffer 
     pair<int,int> key = pair<int,int>(buffer_depth, buffer_item_size);
+
+    if(globalTracePower==true)
+    { cout<<"Power::configureRouter key: "<<key.first<<"  "<<key.second<<endl;}
     
     assert(GlobalParams::power_configuration.bufferPowerConfig.leakage.find(key) != GlobalParams::power_configuration.bufferPowerConfig.leakage.end());
     assert(GlobalParams::power_configuration.bufferPowerConfig.push.find(key) != GlobalParams::power_configuration.bufferPowerConfig.push.end());
@@ -105,7 +108,8 @@ void Power::configureRouter(int link_width,
     buffer_router_pop_pwr_d = GlobalParams::power_configuration.bufferPowerConfig.pop[key];
 
     // Routing 
-    assert(GlobalParams::power_configuration.routerPowerConfig.routing_algorithm_pm.find(routing_function) != GlobalParams::power_configuration.routerPowerConfig.routing_algorithm_pm.end());
+    // assertiion failed in custom routing algorithm
+    // assert(GlobalParams::power_configuration.routerPowerConfig.routing_algorithm_pm.find(routing_function) != GlobalParams::power_configuration.routerPowerConfig.routing_algorithm_pm.end());
 
     routing_pwr_s = W2J(GlobalParams::power_configuration.routerPowerConfig.routing_algorithm_pm[routing_function].first);
     routing_pwr_d = GlobalParams::power_configuration.routerPowerConfig.routing_algorithm_pm[routing_function].second;

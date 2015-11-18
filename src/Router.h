@@ -103,6 +103,7 @@ SC_MODULE(Router)
 	sensitive << clock.pos();
 	
 	routingAlgorithm = RoutingAlgorithms::get(GlobalParams::routing_algorithm);
+    cout<<"Initialising router"<<endl;
 
 	if (routingAlgorithm == 0)
 	{

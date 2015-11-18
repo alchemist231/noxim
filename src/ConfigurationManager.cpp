@@ -11,6 +11,8 @@
 #include "ConfigurationManager.h"
 #include <systemc.h> //Included for the function time() 
 
+void showConfig();  // defined after loadConfiguaration
+
 void loadConfiguration() {
 
     cout << "Loading configuration from file " << GlobalParams::config_filename << endl;
@@ -50,6 +52,10 @@ void loadConfiguration() {
     GlobalParams::use_winoc = config["use_winoc"].as<bool>();
     GlobalParams::use_wirxsleep = config["use_wirxsleep"].as<bool>();
     
+
+    cout<<"Traffic table Filename : "<<GlobalParams::traffic_table_filename<<endl;
+    cout<<"configuring hub : starts "<<endl;
+
     GlobalParams::default_hub_configuration = config["Hubs"]["defaults"].as<HubConfig>();
 
     for(YAML::const_iterator hubs_it = config["Hubs"].begin(); 
@@ -67,6 +73,9 @@ void loadConfiguration() {
         YAML::Node node;
         node[hub_id] = GlobalParams::hub_configuration[hub_id];
     }
+
+    cout<<"configuring hub : ends "<<endl;
+    cout<<"configuring channels : start "<<endl;
 
     GlobalParams::default_channel_configuration = config["Channels"]["defaults"].as<ChannelConfig>();
 
@@ -86,7 +95,12 @@ void loadConfiguration() {
         node[channel_id] = GlobalParams::channel_configuration[channel_id];
     }
 
+    cout<<"configuring channels : ends "<<endl;
+    cout<<"configuring power : starts "<<endl;
+
     GlobalParams::power_configuration = config["Energy"].as<PowerConfig>();
+    cout<<"configuring power : sends "<<endl;
+    showConfig();
 }
 
 void showHelp(char selfname[])

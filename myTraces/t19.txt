@@ -1,0 +1,325 @@
+
+		Noxim - the NoC Simulator
+		(C) University of Catania
+
+Loading configuration from file conf4x4.yaml
+Traffic table Filename : testTraffic.txt
+configuring hub : starts 
+configuring hub : ends 
+configuring channels : start 
+configuring channels : ends 
+configuring power : starts 
+configuring power : sends 
+Using the following configuration: 
+- verbose_mode = VERBOSE_HIGH
+- trace_mode = 1
+- mesh_dim_x = 4
+- mesh_dim_y = 4
+- buffer_depth = 4
+- max_packet_size = 8
+- routing_algorithm = XY
+- selection_strategy = RANDOM
+- packet_injection_rate = 0.02
+- probability_of_retransmission = 0.01
+- traffic_distribution = TRAFFIC_TABLE_BASED
+- clock_period = 1000ps
+- simulation_time = 10000
+- stats_warm_up_time = 1000
+- rnd_generator_seed = 1447758898
+Global Routing Table created 
+GlobalTrafficTable created
+NoC constructor called
+NoC::buildMesh invoked
+Channel  created
+Hub: 1
+Hub: 2
+Hub: 3
+Hub: 4
+traffic from file
+RoutingAlgorithms::get XY
+Initialising router
+RoutingAlgorithms::get XY
+Initialising router
+RoutingAlgorithms::get XY
+Initialising router
+RoutingAlgorithms::get XY
+Initialising router
+RoutingAlgorithms::get XY
+Initialising router
+RoutingAlgorithms::get XY
+Initialising router
+RoutingAlgorithms::get XY
+Initialising router
+RoutingAlgorithms::get XY
+Initialising router
+RoutingAlgorithms::get XY
+Initialising router
+RoutingAlgorithms::get XY
+Initialising router
+RoutingAlgorithms::get XY
+Initialising router
+RoutingAlgorithms::get XY
+Initialising router
+RoutingAlgorithms::get XY
+Initialising router
+RoutingAlgorithms::get XY
+Initialising router
+RoutingAlgorithms::get XY
+Initialising router
+RoutingAlgorithms::get XY
+Initialising router
+Reset...
+
+Info: (I702) default timescale unit used for tracing: 1 ps (trace_1.vcd)
+ done! Now running for 10000 cycles...
+8	1	8
+8	1	9
+8	1	5
+8	1	8
+8	1	9
+8	1	5
+8	1	8
+8	1	9
+8	1	5
+8	1	8
+8	1	9
+8	1	5
+8	1	8
+8	1	9
+8	1	5
+8	1	8
+8	1	9
+8	1	5
+8	1	8
+8	1	9
+8	1	5
+8	1	8
+8	1	9
+8	1	5
+8	1	8
+8	1	9
+8	1	5
+8	1	8
+8	1	9
+8	1	5
+8	1	8
+8	1	9
+8	1	5
+8	1	8
+8	1	9
+8	1	5
+8	1	8
+8	1	9
+8	1	5
+8	1	8
+8	1	9
+8	1	5
+8	1	8
+8	1	9
+8	1	5
+8	1	8
+8	1	9
+8	1	5
+8	1	8
+8	1	9
+8	1	5
+8	1	8
+8	1	9
+8	1	5
+8	1	8
+8	1	9
+8	1	5
+8	1	8
+8	1	9
+8	1	5
+8	1	8
+8	1	9
+8	1	5
+8	1	8
+8	1	9
+8	1	5
+8	1	8
+8	1	9
+8	1	5
+8	1	8
+8	1	9
+8	1	5
+8	1	8
+8	1	9
+8	1	5
+8	1	8
+8	1	9
+8	1	5
+8	1	8
+8	1	9
+8	1	5
+8	1	8
+8	1	9
+8	1	5
+8	1	8
+8	1	9
+8	1	5
+8	1	8
+8	1	9
+8	1	5
+8	1	8
+8	1	9
+2	6	2
+8	1	5
+2	6	2
+2	6	2
+2	6	2
+2	6	2
+2	6	2
+2	6	2
+2	6	2
+3	11	3
+3	11	7
+3	11	3
+3	11	7
+3	11	3
+3	11	7
+3	11	3
+3	11	7
+Noxim simulation completed.
+ ( 11000 cycles executed)
+GlobalStats initialised
+
+detailed = [
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+% Aggregated average delay (cycles): -nan
+% Aggregated average throughput (flits/cycle): 0
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+     8    1   63.2903       116      0.0984127           -1          31         248
+% Aggregated average delay (cycles): 63.2903
+% Aggregated average throughput (flits/cycle): 0.0984127
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+% Aggregated average delay (cycles): -nan
+% Aggregated average throughput (flits/cycle): 0
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+% Aggregated average delay (cycles): -nan
+% Aggregated average throughput (flits/cycle): 0
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+% Aggregated average delay (cycles): -nan
+% Aggregated average throughput (flits/cycle): 0
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+% Aggregated average delay (cycles): -nan
+% Aggregated average throughput (flits/cycle): 0
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+     2    6         4         4      0.0227515           -1           8          64
+% Aggregated average delay (cycles): 4
+% Aggregated average throughput (flits/cycle): 0.0227515
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+% Aggregated average delay (cycles): -nan
+% Aggregated average throughput (flits/cycle): 0
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+% Aggregated average delay (cycles): -nan
+% Aggregated average throughput (flits/cycle): 0
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+% Aggregated average delay (cycles): -nan
+% Aggregated average throughput (flits/cycle): 0
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+% Aggregated average delay (cycles): -nan
+% Aggregated average throughput (flits/cycle): 0
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+     3   11       8.5        16      0.0096125           -1           4          32
+% Aggregated average delay (cycles): 8.5
+% Aggregated average throughput (flits/cycle): 0.0096125
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+% Aggregated average delay (cycles): -nan
+% Aggregated average throughput (flits/cycle): 0
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+% Aggregated average delay (cycles): -nan
+% Aggregated average throughput (flits/cycle): 0
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+% Aggregated average delay (cycles): -nan
+% Aggregated average throughput (flits/cycle): 0
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+% Aggregated average delay (cycles): -nan
+% Aggregated average throughput (flits/cycle): 0
+];
+
+max_delay = [
+       -1   116    -1    -1
+       -1    -1     4    -1
+       -1    -1    -1    16
+       -1    -1    -1    -1
+];
+
+routed_flits = [
+            0         0         0         0
+            0       248         0        32
+            0       248         0         0
+            0         0         0         0
+];
+power_dynamic = [
+	0.000000e+00	 % antenna_buffer_front_pwr_d
+	0.000000e+00	 % antenna_buffer_pop_pwr_d
+	0.000000e+00	 % antenna_buffer_push_pwr_d
+	0.000000e+00	 % buffer_from_tile_front_pwr_d
+	0.000000e+00	 % buffer_from_tile_pop_pwr_d
+	0.000000e+00	 % buffer_from_tile_push_pwr_d
+	0.000000e+00	 % buffer_front_pwr_d
+	6.493440e-10	 % buffer_pop_pwr_d
+	9.265920e-10	 % buffer_push_pwr_d
+	0.000000e+00	 % buffer_to_tile_front_pwr_d
+	0.000000e+00	 % buffer_to_tile_pop_pwr_d
+	0.000000e+00	 % buffer_to_tile_push_pwr_d
+	2.687360e-10	 % crossbar_pwr_d
+	0.000000e+00	 % link_r2h_pwr_d
+	1.898906e-09	 % link_r2r_pwr_d
+	2.903360e-10	 % ni_pwr_d
+	6.540000e-12	 % routing_pwr_d
+	5.450000e-12	 % selection_pwr_d
+	0.000000e+00	 % wireless_dynamic_rx_pwr
+	0.000000e+00	 % wireless_snooping
+	0.000000e+00	 % wireless_tx
+];
+power_static = [
+	0.000000e+00	 % antenna_buffer_pwr_s
+	0.000000e+00	 % buffer_from_tile_pwr_s
+	1.816000e-06	 % buffer_router_pwr_s
+	0.000000e+00	 % buffer_to_tile_pwr_s
+	1.198400e-07	 % crossbar_pwr_s
+	2.611200e-09	 % link_r2h_pwr_s
+	1.382400e-07	 % ni_pwr_s
+	1.920000e-08	 % routing_pwr_s
+	1.760000e-08	 % selection_pwr_s
+	0.000000e+00	 % transceiver_rx_pwr_biasing
+	0.000000e+00	 % transceiver_rx_pwr_s
+	0.000000e+00	 % transceiver_tx_pwr_biasing
+	0.000000e+00	 % transceiver_tx_pwr_s
+];
+wirxsleep_stats = [
+%	Total Sleep Cycles (T), antenna BufferRX sleep cycles (ARX), BufferToTile sleep cycles (TTRX) 
+%	HUB	T	ARX	TTRX	
+	0	0.00	-nan	-nan
+	1	0.00	-nan	-nan
+	2	0.00	-nan	-nan
+	3	0.00	-nan	-nan
+];
+% Total received packets: 43
+% Total received flits: 344
+% Global average delay (cycles): 47.1628
+% Global average throughput (flits/cycle): 0.0435922
+% Throughput (flits/cycle/IP): 0.0127407
+% Max delay (cycles): 116
+% Total energy (J): 2.11754e-06
+% 	Dynamic energy (J): 4.0459e-09
+% 	Static energy (J): 2.11349e-06
