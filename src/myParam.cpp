@@ -1,19 +1,27 @@
-bool globalTrace = true;
+
+//=====================================
+
+bool globalTrace = false;
 bool globalTraceBuffer = false ;
-bool globalTraceChannel = true;
+bool globalTraceChannel = false;
 int globalTraceBufferCount = 0;
-bool globalTraceRoutingTable = true;
-bool globalTraceTrafficTable = true;
-bool globalTraceGlobalStats = true;
-bool globalTraceHub = true;
+bool globalTraceRoutingTable = false;
+bool globalTraceTrafficTable = false;
+bool globalTraceGlobalStats = false;
+bool globalTraceHub = false;
 int globalTraceHubCount = 0;
 bool globalTraceInitiator = false;
 bool globalTraceLocalRoutingTable = false;
 int globalTraceLocalRoutingTableCount= 0;
-bool globalTraceMm=true;
-bool globalTraceNoC=true;
+bool globalTraceMm=false;
+bool globalTraceNoC=false;
 bool globalTracePower=false;
 bool globalTraceProcessingElement=false;
+
+
+// ===============================================
+
+
 
 /*
 buffer.cpp

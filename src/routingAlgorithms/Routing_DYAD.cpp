@@ -1,5 +1,16 @@
 #include "Routing_DYAD.h"
 
+// void printVector(vector<int> &vec)
+// {
+//     int sz=vec.size();
+//     cout<<"Vector size: "<<sz<<"\t";
+//     for(int i=0;i<sz;i++)
+//     {
+//         cout<<vec[i]<<"\t";
+//     }
+//     cout<<endl;
+// }
+
 RoutingAlgorithmsRegister Routing_DYAD::routingAlgorithmsRegister("DYAD", getInstance());
 
 Routing_DYAD * Routing_DYAD::routing_DYAD = 0;
@@ -27,6 +38,8 @@ vector<int> Routing_DYAD::route(Router * router, const RouteData & routeData)
     directions = odd_even->route(router, routeData);
 
     if (!router->inCongestion()) directions.resize(1);
+
+    // printVector(directions);
 
     return directions;
 }

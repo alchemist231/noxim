@@ -263,7 +263,7 @@ int Router::route(const RouteData & route_data)
 	return DIRECTION_LOCAL;
 
 	//cout<<"current: "<<route_data.current_id<<" src: "<<route_data.src_id<<" dst: "<<route_data.dst_id<<" dir_in: "<<route_data.dir_in<<endl;		
-	cout<<route_data.src_id<<"\t"<<route_data.dst_id<<"\t"<<route_data.current_id<<endl;
+	//cout<<route_data.src_id<<"\t"<<route_data.dst_id<<"\t"<<route_data.current_id<<endl;
 
     power.routing();
     vector < int >candidate_channels = routingFunction(route_data);

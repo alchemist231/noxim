@@ -1,3 +1,7 @@
+
+
+//==========================================
+
 extern bool globalTrace;
 extern bool globalTraceBuffer;
 extern int globalTraceBufferCount;
@@ -14,3 +18,8 @@ extern bool globalTraceMm;
 extern bool globalTraceNoC;
 extern bool globalTracePower;
 extern bool globalTraceProcessingElement;
+
+
+// _------------>> MY FUNCTIONS  <<-------------------
+
+

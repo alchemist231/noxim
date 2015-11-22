@@ -1,5 +1,16 @@
 #include "Routing_ODD_EVEN.h"
 
+void printVector(std::vector<int> &vec)
+{
+    int sz=vec.size();
+    std::cout<<"Vector size: "<<sz<<"\t";
+    for(int i=0;i<sz;i++)
+    {
+        std::cout<<vec[i]<<"\t";
+    }
+}
+
+
 RoutingAlgorithmsRegister Routing_ODD_EVEN::routingAlgorithmsRegister("ODD_EVEN", getInstance());
 
 Routing_ODD_EVEN * Routing_ODD_EVEN::routing_ODD_EVEN = 0;
@@ -58,6 +69,7 @@ vector<int> Routing_ODD_EVEN::route(Router * router, const RouteData & routeData
         }
     }
 
+    //printVector(directions);
     assert(directions.size() > 0 && directions.size() <= 2);
 
     return directions;

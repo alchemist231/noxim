@@ -402,6 +402,7 @@ void parseCmdLine(int arg_num, char *arg_vet[])
 void configure(int arg_num, char *arg_vet[]) {
 
     bool config_found = false;
+    cout<<"this config called"<<endl;
 
     for (int i = 1; i < arg_num; i++) {
 	    if (!strcmp(arg_vet[i], "-help")) {

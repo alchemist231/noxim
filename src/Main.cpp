@@ -34,7 +34,7 @@ void signalHandler( int signum )
 
 int sc_main(int arg_num, char *arg_vet[])
 {
-    signal(SIGQUIT, signalHandler);  
+    signal(SIGQUIT, signalHandler); 
 
     // TEMP
     drained_volume = 0;
@@ -48,9 +48,11 @@ int sc_main(int arg_num, char *arg_vet[])
 
     // Signals
     sc_clock clock("clock", GlobalParams::clock_period_ps, SC_PS);
+    cout<<"clock ok"<<endl;
     sc_signal <bool> reset;
 
     // NoC instance
+    cout<<"NOC initialising"<<endl;
     n = new NoC("NoC");
 
     n->clock(clock);
@@ -62,6 +64,8 @@ int sc_main(int arg_num, char *arg_vet[])
 	tf = sc_create_vcd_trace_file(GlobalParams::trace_filename.c_str());
 	sc_trace(tf, reset, "reset");
 	sc_trace(tf, clock, "clock");
+
+
 
 	for (int i = 0; i < GlobalParams::mesh_dim_x; i++) {
 	    for (int j = 0; j < GlobalParams::mesh_dim_y; j++) {
@@ -88,6 +92,7 @@ int sc_main(int arg_num, char *arg_vet[])
 	}
     }
     // Reset the chip and run the simulation
+    cout<<"For starts"<<endl;
     reset.write(1);
     cout << "Reset..." << endl;
     srand(GlobalParams::rnd_generator_seed);	// time(NULL));
@@ -126,5 +131,5 @@ int sc_main(int arg_num, char *arg_vet[])
 #endif
     }
 
-    return 0;
+return 0;
 }

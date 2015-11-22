@@ -75,7 +75,7 @@ struct RouteData {
     int dst_id;
     int dir_in;			// direction from which the packet comes from
 
-    void printRouteData(){cout<<"RouteData src:";}
+    void printRouteData(){cout<<"RouteData src:"<<src_id<<" dst: "<<dst_id<<" current: "<<current_id<<" input direction of packet: "<<dir_in<<endl;}
 
 };
 
