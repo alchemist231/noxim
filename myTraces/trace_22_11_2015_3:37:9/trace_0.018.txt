@@ -1,0 +1,53 @@
+
+		Noxim - the NoC Simulator
+		(C) University of Catania
+
+this config called
+Loading configuration from file ../myTraces/myConfigs/config16x16.yaml
+Traffic table Filename : t.txt
+configuring hub : starts 
+configuring hub : ends 
+configuring channels : start 
+configuring channels : ends 
+configuring power : starts 
+configuring power : sends 
+Using the following configuration: 
+- verbose_mode = VERBOSE_HIGH
+- trace_mode = 0
+- mesh_dim_x = 16
+- mesh_dim_y = 16
+- buffer_depth = 4
+- max_packet_size = 4
+- routing_algorithm = ODD_EVEN
+- selection_strategy = RANDOM
+- packet_injection_rate = 0.01
+- probability_of_retransmission = 0.01
+- traffic_distribution = TRAFFIC_TRANSPOSE2
+- clock_period = 1000ps
+- simulation_time = 20000
+- stats_warm_up_time = 1000
+- rnd_generator_seed = 1448143683
+hbxsavxhs
+changing PIR
+PIR:0.012
+clock ok
+NOC initialising
+For starts
+Reset...
+ done! Now running for 20000 cycles...
+Noxim simulation completed.
+ ( 21000 cycles executed)
+% Total received packets: 58336
+% Total received flits: 174543
+% Global average delay (cycles): 33.765
+% Global average throughput (flits/cycle): 0.0342246
+% Throughput (flits/cycle/IP): 0.0358847
+% Max delay (cycles): 342
+% Total energy (J): 0.000145139
+% 	Dynamic energy (J): 1.32852e-05
+% 	Static energy (J): 0.000131854
+changing PIR
+PIR:0.032
+
+Error: (E113) insert primitive channel failed: simulation running
+In file: ../../../../src/sysc/communication/sc_prim_channel.cpp:203

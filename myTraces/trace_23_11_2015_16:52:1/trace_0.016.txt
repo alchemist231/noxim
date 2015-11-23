@@ -1,0 +1,1425 @@
+
+		Noxim - the NoC Simulator
+		(C) University of Catania
+
+this config called
+Loading configuration from file ../myTraces/myConfigs/config16x16.yaml
+Traffic table Filename : traffic.txt
+configuring hub : starts 
+configuring hub : ends 
+configuring channels : start 
+configuring channels : ends 
+configuring power : starts 
+configuring power : sends 
+Using the following configuration: 
+- verbose_mode = VERBOSE_HIGH
+- trace_mode = 0
+- mesh_dim_x = 16
+- mesh_dim_y = 16
+- buffer_depth = 4
+- max_packet_size = 4
+- routing_algorithm = ODD_EVEN
+- selection_strategy = RANDOM
+- packet_injection_rate = 0.026
+- probability_of_retransmission = 0.01
+- traffic_distribution = TRAFFIC_TABLE_BASED
+- clock_period = 1000ps
+- simulation_time = 20000
+- stats_warm_up_time = 1000
+- rnd_generator_seed = 1448277831
+clock ok
+NOC initialising
+traffic from file
+For starts
+Reset...
+ done! Now running for 20000 cycles...
+Noxim simulation completed.
+ ( 21000 cycles executed)
+
+detailed = [
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+     0    0   2.60282        15      0.0744074           -1         496        1488
+% Aggregated average delay (cycles): 2.60282
+% Aggregated average throughput (flits/cycle): 0.0744074
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    16    1   7.29979        31      0.0749575           -1         487        1499
+% Aggregated average delay (cycles): 7.29979
+% Aggregated average throughput (flits/cycle): 0.0749575
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    32    2   12.7671        58      0.0747331           -1         498        1491
+% Aggregated average delay (cycles): 12.7671
+% Aggregated average throughput (flits/cycle): 0.0747331
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    48    3   31.4962       461      0.0811245           -1         528        1616
+% Aggregated average delay (cycles): 31.4962
+% Aggregated average throughput (flits/cycle): 0.0811245
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    64    4   47.3885       236      0.0746097           -1         489        1491
+% Aggregated average delay (cycles): 47.3885
+% Aggregated average throughput (flits/cycle): 0.0746097
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    80    5   70.5896       395      0.0764449           -1         502        1525
+% Aggregated average delay (cycles): 70.5896
+% Aggregated average throughput (flits/cycle): 0.0764449
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    96    6   99.7385       455      0.0754566           -1         501        1504
+% Aggregated average delay (cycles): 99.7385
+% Aggregated average throughput (flits/cycle): 0.0754566
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   112    7   151.822       439      0.0748956           -1         488        1489
+% Aggregated average delay (cycles): 151.822
+% Aggregated average throughput (flits/cycle): 0.0748956
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   128    8   205.223       715      0.0735125           -1         497        1469
+% Aggregated average delay (cycles): 205.223
+% Aggregated average throughput (flits/cycle): 0.0735125
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   144    9   411.617      1102      0.0760451           -1         520        1519
+% Aggregated average delay (cycles): 411.617
+% Aggregated average throughput (flits/cycle): 0.0760451
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   160   10   1667.73      4236       0.062726           -1         411        1249
+% Aggregated average delay (cycles): 1667.73
+% Aggregated average throughput (flits/cycle): 0.062726
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   176   11    4585.9      9995      0.0421859           -1         285         843
+% Aggregated average delay (cycles): 4585.9
+% Aggregated average throughput (flits/cycle): 0.0421859
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   192   12   6648.05     11492      0.0330127           -1         219         659
+% Aggregated average delay (cycles): 6648.05
+% Aggregated average throughput (flits/cycle): 0.0330127
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   208   13   6346.23     13205      0.0229954           -1         153         458
+% Aggregated average delay (cycles): 6346.23
+% Aggregated average throughput (flits/cycle): 0.0229954
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   224   14   7905.45     16777      0.0117117           -1          78         234
+% Aggregated average delay (cycles): 7905.45
+% Aggregated average throughput (flits/cycle): 0.0117117
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   240   15   3167.59      8258      0.0465924           -1         306         912
+% Aggregated average delay (cycles): 3167.59
+% Aggregated average throughput (flits/cycle): 0.0465924
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+     1   16   14.0683        85      0.0711173           -1         483        1420
+% Aggregated average delay (cycles): 14.0683
+% Aggregated average throughput (flits/cycle): 0.0711173
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    17   17   2.43975         9      0.0709316           -1         473        1417
+% Aggregated average delay (cycles): 2.43975
+% Aggregated average throughput (flits/cycle): 0.0709316
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    33   18   9.15175        33      0.0772504           -1         514        1543
+% Aggregated average delay (cycles): 9.15175
+% Aggregated average throughput (flits/cycle): 0.0772504
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    49   19   37.5194       323      0.0734294           -1         489        1468
+% Aggregated average delay (cycles): 37.5194
+% Aggregated average throughput (flits/cycle): 0.0734294
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    65   20   52.8532       269      0.0730956           -1         477        1447
+% Aggregated average delay (cycles): 52.8532
+% Aggregated average throughput (flits/cycle): 0.0730956
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    81   21   88.0768       351      0.0691104           -1         469        1382
+% Aggregated average delay (cycles): 88.0768
+% Aggregated average throughput (flits/cycle): 0.0691104
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    97   22   150.574       560      0.0732955           -1         486        1461
+% Aggregated average delay (cycles): 150.574
+% Aggregated average throughput (flits/cycle): 0.0732955
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   113   23   415.743      1115      0.0700105           -1         475        1400
+% Aggregated average delay (cycles): 415.743
+% Aggregated average throughput (flits/cycle): 0.0700105
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   129   24   3421.83      6919      0.0496046           -1         336         991
+% Aggregated average delay (cycles): 3421.83
+% Aggregated average throughput (flits/cycle): 0.0496046
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   145   25   5224.52     10106      0.0328993           -1         214         657
+% Aggregated average delay (cycles): 5224.52
+% Aggregated average throughput (flits/cycle): 0.0328993
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   161   26   8074.16     14591      0.0214419           -1         137         425
+% Aggregated average delay (cycles): 8074.16
+% Aggregated average throughput (flits/cycle): 0.0214419
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   177   27    7705.1     15714      0.0153761           -1         101         307
+% Aggregated average delay (cycles): 7705.1
+% Aggregated average throughput (flits/cycle): 0.0153761
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   193   28   8908.21     16505     0.00870723           -1          56         170
+% Aggregated average delay (cycles): 8908.21
+% Aggregated average throughput (flits/cycle): 0.00870723
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   209   29   9806.15     16787      0.0074674           -1          47         142
+% Aggregated average delay (cycles): 9806.15
+% Aggregated average throughput (flits/cycle): 0.0074674
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   225   30   7998.22     16664     0.00611588           -1          36         114
+% Aggregated average delay (cycles): 7998.22
+% Aggregated average throughput (flits/cycle): 0.00611588
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   241   31   3863.62     10036      0.0450857           -1         306         900
+% Aggregated average delay (cycles): 3863.62
+% Aggregated average throughput (flits/cycle): 0.0450857
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+     2   32   30.5765       172      0.0804161           -1         536        1608
+% Aggregated average delay (cycles): 30.5765
+% Aggregated average throughput (flits/cycle): 0.0804161
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    18   33   18.1822       138      0.0727783           -1         483        1452
+% Aggregated average delay (cycles): 18.1822
+% Aggregated average throughput (flits/cycle): 0.0727783
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    34   34   2.63508        12      0.0737574           -1         496        1475
+% Aggregated average delay (cycles): 2.63508
+% Aggregated average throughput (flits/cycle): 0.0737574
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    50   35   22.6853        91       0.069807           -1         464        1396
+% Aggregated average delay (cycles): 22.6853
+% Aggregated average throughput (flits/cycle): 0.069807
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    66   36   38.3891       148      0.0705459           -1         460        1410
+% Aggregated average delay (cycles): 38.3891
+% Aggregated average throughput (flits/cycle): 0.0705459
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    82   37   65.2681       391      0.0697535           -1         470        1395
+% Aggregated average delay (cycles): 65.2681
+% Aggregated average throughput (flits/cycle): 0.0697535
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    98   38   92.0356       461      0.0766496           -1         505        1531
+% Aggregated average delay (cycles): 92.0356
+% Aggregated average throughput (flits/cycle): 0.0766496
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   114   39   129.892       479      0.0725363           -1         489        1450
+% Aggregated average delay (cycles): 129.892
+% Aggregated average throughput (flits/cycle): 0.0725363
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   130   40   203.486       714      0.0780952           -1         531        1558
+% Aggregated average delay (cycles): 203.486
+% Aggregated average throughput (flits/cycle): 0.0780952
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   146   41   542.097      1230      0.0733894           -1         484        1465
+% Aggregated average delay (cycles): 542.097
+% Aggregated average throughput (flits/cycle): 0.0733894
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   162   42   4128.96      7978      0.0485049           -1         320         970
+% Aggregated average delay (cycles): 4128.96
+% Aggregated average throughput (flits/cycle): 0.0485049
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   178   43   5254.29     11604      0.0296668           -1         192         592
+% Aggregated average delay (cycles): 5254.29
+% Aggregated average throughput (flits/cycle): 0.0296668
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   194   44   7889.86     14481      0.0171224           -1         111         335
+% Aggregated average delay (cycles): 7889.86
+% Aggregated average throughput (flits/cycle): 0.0171224
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   210   45   8855.74     15985      0.0138112           -1          91         274
+% Aggregated average delay (cycles): 8855.74
+% Aggregated average throughput (flits/cycle): 0.0138112
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   226   46   7705.27     16639     0.00921039           -1          60         178
+% Aggregated average delay (cycles): 7705.27
+% Aggregated average throughput (flits/cycle): 0.00921039
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   242   47   7921.69     14847      0.0203102           -1         131         406
+% Aggregated average delay (cycles): 7921.69
+% Aggregated average throughput (flits/cycle): 0.0203102
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+     3   48   42.0533       232      0.0742537           -1         488        1485
+% Aggregated average delay (cycles): 42.0533
+% Aggregated average throughput (flits/cycle): 0.0742537
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    19   49   38.7101       199      0.0678733           -1         445        1350
+% Aggregated average delay (cycles): 38.7101
+% Aggregated average throughput (flits/cycle): 0.0678733
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    35   50   52.4402       322      0.0743132           -1         502        1485
+% Aggregated average delay (cycles): 52.4402
+% Aggregated average throughput (flits/cycle): 0.0743132
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    51   51   2.50408        12      0.0739886           -1         490        1474
+% Aggregated average delay (cycles): 2.50408
+% Aggregated average throughput (flits/cycle): 0.0739886
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    67   52   27.9773       123      0.0794362           -1         528        1578
+% Aggregated average delay (cycles): 27.9773
+% Aggregated average throughput (flits/cycle): 0.0794362
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    83   53    80.814       522      0.0740092           -1         484        1479
+% Aggregated average delay (cycles): 80.814
+% Aggregated average throughput (flits/cycle): 0.0740092
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    99   54   142.466       568      0.0761991           -1         502        1522
+% Aggregated average delay (cycles): 142.466
+% Aggregated average throughput (flits/cycle): 0.0761991
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   115   55   283.413       879      0.0759183           -1         506        1517
+% Aggregated average delay (cycles): 283.413
+% Aggregated average throughput (flits/cycle): 0.0759183
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   131   56   1144.39      2213      0.0691214           -1         461        1376
+% Aggregated average delay (cycles): 1144.39
+% Aggregated average throughput (flits/cycle): 0.0691214
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   147   57   3013.24      6811      0.0514938           -1         339        1029
+% Aggregated average delay (cycles): 3013.24
+% Aggregated average throughput (flits/cycle): 0.0514938
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   163   58   5619.69     10593      0.0354089           -1         230         708
+% Aggregated average delay (cycles): 5619.69
+% Aggregated average throughput (flits/cycle): 0.0354089
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   179   59   6764.99     13132      0.0252341           -1         168         504
+% Aggregated average delay (cycles): 6764.99
+% Aggregated average throughput (flits/cycle): 0.0252341
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   195   60   7987.72     14678      0.0198496           -1         134         396
+% Aggregated average delay (cycles): 7987.72
+% Aggregated average throughput (flits/cycle): 0.0198496
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   211   61   8334.16     16150      0.0110963           -1          73         216
+% Aggregated average delay (cycles): 8334.16
+% Aggregated average throughput (flits/cycle): 0.0110963
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   227   62   7378.59     16155      0.0114138           -1          74         225
+% Aggregated average delay (cycles): 7378.59
+% Aggregated average throughput (flits/cycle): 0.0114138
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   243   63   1548.89      4545      0.0763122           -1         504        1499
+% Aggregated average delay (cycles): 1548.89
+% Aggregated average throughput (flits/cycle): 0.0763122
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+     4   64   63.4669       247      0.0771577           -1         514        1543
+% Aggregated average delay (cycles): 63.4669
+% Aggregated average throughput (flits/cycle): 0.0771577
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    20   65   54.9674       217      0.0784078           -1         521        1568
+% Aggregated average delay (cycles): 54.9674
+% Aggregated average throughput (flits/cycle): 0.0784078
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    36   66   46.0525       160      0.0683239           -1         457        1366
+% Aggregated average delay (cycles): 46.0525
+% Aggregated average throughput (flits/cycle): 0.0683239
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    52   67   18.6047       101      0.0752801           -1         506        1505
+% Aggregated average delay (cycles): 18.6047
+% Aggregated average throughput (flits/cycle): 0.0752801
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    68   68   2.57526        14      0.0726735           -1         485        1451
+% Aggregated average delay (cycles): 2.57526
+% Aggregated average throughput (flits/cycle): 0.0726735
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    84   69   34.8661       131      0.0716653           -1         478        1427
+% Aggregated average delay (cycles): 34.8661
+% Aggregated average throughput (flits/cycle): 0.0716653
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   100   70   59.8273       220      0.0755114           -1         498        1506
+% Aggregated average delay (cycles): 59.8273
+% Aggregated average throughput (flits/cycle): 0.0755114
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   116   71   79.3447       270      0.0653873           -1         441        1305
+% Aggregated average delay (cycles): 79.3447
+% Aggregated average throughput (flits/cycle): 0.0653873
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   132   72   110.973       314      0.0740055           -1         483        1479
+% Aggregated average delay (cycles): 110.973
+% Aggregated average throughput (flits/cycle): 0.0740055
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   148   73   170.463       545      0.0715536           -1         480        1431
+% Aggregated average delay (cycles): 170.463
+% Aggregated average throughput (flits/cycle): 0.0715536
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   164   74   255.337       875      0.0757147           -1         505        1499
+% Aggregated average delay (cycles): 255.337
+% Aggregated average throughput (flits/cycle): 0.0757147
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   180   75   836.374      2091      0.0681453           -1         452        1358
+% Aggregated average delay (cycles): 836.374
+% Aggregated average throughput (flits/cycle): 0.0681453
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   196   76   3979.53      8422      0.0434172           -1         290         865
+% Aggregated average delay (cycles): 3979.53
+% Aggregated average throughput (flits/cycle): 0.0434172
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   212   77   7044.91     12155      0.0265203           -1         177         529
+% Aggregated average delay (cycles): 7044.91
+% Aggregated average throughput (flits/cycle): 0.0265203
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   228   78   8173.77     15426      0.0171766           -1         114         343
+% Aggregated average delay (cycles): 8173.77
+% Aggregated average throughput (flits/cycle): 0.0171766
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   244   79   4291.89      9143      0.0377444           -1         248         753
+% Aggregated average delay (cycles): 4291.89
+% Aggregated average throughput (flits/cycle): 0.0377444
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+     5   80   72.4868       321       0.073383           -1         491        1467
+% Aggregated average delay (cycles): 72.4868
+% Aggregated average throughput (flits/cycle): 0.073383
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    21   81   79.4805       322      0.0773211           -1         514        1539
+% Aggregated average delay (cycles): 79.4805
+% Aggregated average throughput (flits/cycle): 0.0773211
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    37   82   101.972       445      0.0707712           -1         466        1415
+% Aggregated average delay (cycles): 101.972
+% Aggregated average throughput (flits/cycle): 0.0707712
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    53   83   48.8651       222      0.0745037           -1         504        1490
+% Aggregated average delay (cycles): 48.8651
+% Aggregated average throughput (flits/cycle): 0.0745037
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    69   84   36.9412       132      0.0752726           -1         510        1505
+% Aggregated average delay (cycles): 36.9412
+% Aggregated average throughput (flits/cycle): 0.0752726
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    85   85    2.5856        11       0.075772           -1         514        1514
+% Aggregated average delay (cycles): 2.5856
+% Aggregated average throughput (flits/cycle): 0.075772
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   101   86   29.8432       128      0.0810987           -1         523        1618
+% Aggregated average delay (cycles): 29.8432
+% Aggregated average throughput (flits/cycle): 0.0810987
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   117   87   75.4589       311      0.0743595           -1         499        1486
+% Aggregated average delay (cycles): 75.4589
+% Aggregated average throughput (flits/cycle): 0.0743595
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   133   88   151.252       476      0.0714143           -1         477        1425
+% Aggregated average delay (cycles): 151.252
+% Aggregated average throughput (flits/cycle): 0.0714143
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   149   89     237.6       518      0.0766405           -1         505        1523
+% Aggregated average delay (cycles): 237.6
+% Aggregated average throughput (flits/cycle): 0.0766405
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   165   90    458.51      1213      0.0668033           -1         437        1336
+% Aggregated average delay (cycles): 458.51
+% Aggregated average throughput (flits/cycle): 0.0668033
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   181   91   2853.16      5686      0.0499773           -1         327         992
+% Aggregated average delay (cycles): 2853.16
+% Aggregated average throughput (flits/cycle): 0.0499773
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   197   92   5403.44      9272      0.0386926           -1         257         773
+% Aggregated average delay (cycles): 5403.44
+% Aggregated average throughput (flits/cycle): 0.0386926
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   213   93    6251.5     11947      0.0272745           -1         181         545
+% Aggregated average delay (cycles): 6251.5
+% Aggregated average throughput (flits/cycle): 0.0272745
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   229   94   5650.46     12187      0.0257935           -1         173         512
+% Aggregated average delay (cycles): 5650.46
+% Aggregated average throughput (flits/cycle): 0.0257935
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   245   95   319.469      1211      0.0711783           -1         475        1422
+% Aggregated average delay (cycles): 319.469
+% Aggregated average throughput (flits/cycle): 0.0711783
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+     6   96   93.7725       265      0.0752075           -1         501        1504
+% Aggregated average delay (cycles): 93.7725
+% Aggregated average throughput (flits/cycle): 0.0752075
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    22   97    102.84       407      0.0769269           -1         518        1538
+% Aggregated average delay (cycles): 102.84
+% Aggregated average throughput (flits/cycle): 0.0769269
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    38   98   103.012       342      0.0738067           -1         490        1472
+% Aggregated average delay (cycles): 103.012
+% Aggregated average throughput (flits/cycle): 0.0738067
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    54   99   61.2462       187      0.0684068           -1         455        1368
+% Aggregated average delay (cycles): 61.2462
+% Aggregated average throughput (flits/cycle): 0.0684068
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    70  100   39.3713       192      0.0701035           -1         474        1402
+% Aggregated average delay (cycles): 39.3713
+% Aggregated average throughput (flits/cycle): 0.0701035
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    86  101   15.0231        53      0.0782154           -1         519        1555
+% Aggregated average delay (cycles): 15.0231
+% Aggregated average throughput (flits/cycle): 0.0782154
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   102  102   2.56701        16      0.0740074           -1         485        1480
+% Aggregated average delay (cycles): 2.56701
+% Aggregated average throughput (flits/cycle): 0.0740074
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   118  103     40.26       176      0.0825408           -1         550        1649
+% Aggregated average delay (cycles): 40.26
+% Aggregated average throughput (flits/cycle): 0.0825408
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   134  104   57.2835       185      0.0691035           -1         455        1382
+% Aggregated average delay (cycles): 57.2835
+% Aggregated average throughput (flits/cycle): 0.0691035
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   150  105   86.0082       278      0.0742156           -1         485        1476
+% Aggregated average delay (cycles): 86.0082
+% Aggregated average throughput (flits/cycle): 0.0742156
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   166  106   119.468       412      0.0753038           -1         506        1506
+% Aggregated average delay (cycles): 119.468
+% Aggregated average throughput (flits/cycle): 0.0753038
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   182  107   185.996       612      0.0779851           -1         514        1559
+% Aggregated average delay (cycles): 185.996
+% Aggregated average throughput (flits/cycle): 0.0779851
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   198  108   312.709       853      0.0714071           -1         477        1428
+% Aggregated average delay (cycles): 312.709
+% Aggregated average throughput (flits/cycle): 0.0714071
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   214  109   1591.14      3045      0.0603828           -1         398        1205
+% Aggregated average delay (cycles): 1591.14
+% Aggregated average throughput (flits/cycle): 0.0603828
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   230  110   2868.84      7514      0.0484186           -1         323         966
+% Aggregated average delay (cycles): 2868.84
+% Aggregated average throughput (flits/cycle): 0.0484186
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   246  111   447.885      1286      0.0694166           -1         471        1385
+% Aggregated average delay (cycles): 447.885
+% Aggregated average throughput (flits/cycle): 0.0694166
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+     7  112   111.254       315      0.0681966           -1         464        1361
+% Aggregated average delay (cycles): 111.254
+% Aggregated average throughput (flits/cycle): 0.0681966
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    23  113   169.231       457      0.0752726           -1         494        1498
+% Aggregated average delay (cycles): 169.231
+% Aggregated average throughput (flits/cycle): 0.0752726
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    39  114   212.452       696      0.0775784           -1         513        1548
+% Aggregated average delay (cycles): 212.452
+% Aggregated average throughput (flits/cycle): 0.0775784
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    55  115   109.759       414      0.0729792           -1         493        1459
+% Aggregated average delay (cycles): 109.759
+% Aggregated average throughput (flits/cycle): 0.0729792
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    71  116    75.733       180      0.0679009           -1         457        1357
+% Aggregated average delay (cycles): 75.733
+% Aggregated average throughput (flits/cycle): 0.0679009
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    87  117   43.6681       115      0.0696915           -1         473        1387
+% Aggregated average delay (cycles): 43.6681
+% Aggregated average throughput (flits/cycle): 0.0696915
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   103  118   35.0903       122      0.0709532           -1         476        1418
+% Aggregated average delay (cycles): 35.0903
+% Aggregated average throughput (flits/cycle): 0.0709532
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   119  119   2.48945        11      0.0723368           -1         474        1445
+% Aggregated average delay (cycles): 2.48945
+% Aggregated average throughput (flits/cycle): 0.0723368
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   135  120   27.7402       121      0.0762805           -1         508        1525
+% Aggregated average delay (cycles): 27.7402
+% Aggregated average throughput (flits/cycle): 0.0762805
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   151  121   85.7907       332      0.0741391           -1         492        1477
+% Aggregated average delay (cycles): 85.7907
+% Aggregated average throughput (flits/cycle): 0.0741391
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   167  122   122.009       383      0.0659693           -1         442        1318
+% Aggregated average delay (cycles): 122.009
+% Aggregated average throughput (flits/cycle): 0.0659693
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   183  123   270.149       742      0.0805822           -1         538        1611
+% Aggregated average delay (cycles): 270.149
+% Aggregated average throughput (flits/cycle): 0.0805822
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   199  124   517.164      1253      0.0691984           -1         456        1383
+% Aggregated average delay (cycles): 517.164
+% Aggregated average throughput (flits/cycle): 0.0691984
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   215  125   3463.56      7254      0.0520578           -1         344        1041
+% Aggregated average delay (cycles): 3463.56
+% Aggregated average throughput (flits/cycle): 0.0520578
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   231  126   881.287      2220      0.0704084           -1         467        1405
+% Aggregated average delay (cycles): 881.287
+% Aggregated average throughput (flits/cycle): 0.0704084
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   247  127   206.068       916      0.0691035           -1         457        1382
+% Aggregated average delay (cycles): 206.068
+% Aggregated average throughput (flits/cycle): 0.0691035
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+     8  128   145.174       438      0.0717251           -1         476        1434
+% Aggregated average delay (cycles): 145.174
+% Aggregated average throughput (flits/cycle): 0.0717251
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    24  129   240.305       806      0.0672034           -1         443        1344
+% Aggregated average delay (cycles): 240.305
+% Aggregated average throughput (flits/cycle): 0.0672034
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    40  130   213.936       726      0.0723229           -1         481        1444
+% Aggregated average delay (cycles): 213.936
+% Aggregated average throughput (flits/cycle): 0.0723229
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    56  131   119.206       282      0.0752844           -1         495        1502
+% Aggregated average delay (cycles): 119.206
+% Aggregated average throughput (flits/cycle): 0.0752844
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    72  132   86.9226       355      0.0709348           -1         478        1416
+% Aggregated average delay (cycles): 86.9226
+% Aggregated average throughput (flits/cycle): 0.0709348
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    88  133   52.4851       111      0.0753092           -1         503        1504
+% Aggregated average delay (cycles): 52.4851
+% Aggregated average throughput (flits/cycle): 0.0753092
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   104  134   36.9109       100      0.0726444           -1         494        1451
+% Aggregated average delay (cycles): 36.9109
+% Aggregated average throughput (flits/cycle): 0.0726444
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   120  135   14.1518        41      0.0772083           -1         514        1541
+% Aggregated average delay (cycles): 14.1518
+% Aggregated average throughput (flits/cycle): 0.0772083
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   136  136   2.42748        12      0.0795455           -1         524        1582
+% Aggregated average delay (cycles): 2.42748
+% Aggregated average throughput (flits/cycle): 0.0795455
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   152  137   39.3141       184      0.0787539           -1         519        1575
+% Aggregated average delay (cycles): 39.3141
+% Aggregated average throughput (flits/cycle): 0.0787539
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   168  138   57.2733       199      0.0676108           -1         450        1351
+% Aggregated average delay (cycles): 57.2733
+% Aggregated average throughput (flits/cycle): 0.0676108
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   184  139   86.4901       253      0.0765816           -1         504        1518
+% Aggregated average delay (cycles): 86.4901
+% Aggregated average throughput (flits/cycle): 0.0765816
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   200  140   118.515       453      0.0753668           -1         501        1505
+% Aggregated average delay (cycles): 118.515
+% Aggregated average throughput (flits/cycle): 0.0753668
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   216  141   144.139       582      0.0760538           -1         502        1521
+% Aggregated average delay (cycles): 144.139
+% Aggregated average throughput (flits/cycle): 0.0760538
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   232  142   152.906       496      0.0674208           -1         447        1347
+% Aggregated average delay (cycles): 152.906
+% Aggregated average throughput (flits/cycle): 0.0674208
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   248  143   152.791       496      0.0786376           -1         532        1570
+% Aggregated average delay (cycles): 152.791
+% Aggregated average throughput (flits/cycle): 0.0786376
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+     9  144   192.535       545      0.0670716           -1         443        1336
+% Aggregated average delay (cycles): 192.535
+% Aggregated average throughput (flits/cycle): 0.0670716
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    25  145   1635.82      3224       0.058449           -1         396        1166
+% Aggregated average delay (cycles): 1635.82
+% Aggregated average throughput (flits/cycle): 0.058449
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    41  146    1619.4      3360      0.0575173           -1         381        1150
+% Aggregated average delay (cycles): 1619.4
+% Aggregated average throughput (flits/cycle): 0.0575173
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    57  147   357.264       760      0.0685407           -1         454        1363
+% Aggregated average delay (cycles): 357.264
+% Aggregated average throughput (flits/cycle): 0.0685407
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    73  148   130.453       360      0.0760576           -1         499        1521
+% Aggregated average delay (cycles): 130.453
+% Aggregated average throughput (flits/cycle): 0.0760576
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    89  149   93.8175       224      0.0773087           -1         504        1542
+% Aggregated average delay (cycles): 93.8175
+% Aggregated average throughput (flits/cycle): 0.0773087
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   105  150   74.2254       217      0.0736657           -1         497        1470
+% Aggregated average delay (cycles): 74.2254
+% Aggregated average throughput (flits/cycle): 0.0736657
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   121  151   44.7542       146      0.0804482           -1         541        1601
+% Aggregated average delay (cycles): 44.7542
+% Aggregated average throughput (flits/cycle): 0.0804482
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   137  152   34.7901       171      0.0732073           -1         486        1464
+% Aggregated average delay (cycles): 34.7901
+% Aggregated average throughput (flits/cycle): 0.0732073
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   153  153   2.58743        14      0.0773577           -1         509        1547
+% Aggregated average delay (cycles): 2.58743
+% Aggregated average throughput (flits/cycle): 0.0773577
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   169  154   31.2988       123      0.0765344           -1         502        1530
+% Aggregated average delay (cycles): 31.2988
+% Aggregated average throughput (flits/cycle): 0.0765344
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   185  155   80.3784       350      0.0776524           -1         510        1548
+% Aggregated average delay (cycles): 80.3784
+% Aggregated average throughput (flits/cycle): 0.0776524
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   201  156    138.43       421      0.0763064           -1         509        1523
+% Aggregated average delay (cycles): 138.43
+% Aggregated average throughput (flits/cycle): 0.0763064
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   217  157   220.866       556      0.0779481           -1         522        1556
+% Aggregated average delay (cycles): 220.866
+% Aggregated average throughput (flits/cycle): 0.0779481
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   233  158   197.115       571      0.0742537           -1         488        1485
+% Aggregated average delay (cycles): 197.115
+% Aggregated average throughput (flits/cycle): 0.0742537
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   249  159   126.421       542      0.0731732           -1         489        1459
+% Aggregated average delay (cycles): 126.421
+% Aggregated average throughput (flits/cycle): 0.0731732
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    10  160   340.963      1669      0.0767538           -1         513        1535
+% Aggregated average delay (cycles): 340.963
+% Aggregated average throughput (flits/cycle): 0.0767538
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    26  161   5680.57     10319      0.0361875           -1         236         721
+% Aggregated average delay (cycles): 5680.57
+% Aggregated average throughput (flits/cycle): 0.0361875
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    42  162   4210.06      7593      0.0473308           -1         320         946
+% Aggregated average delay (cycles): 4210.06
+% Aggregated average throughput (flits/cycle): 0.0473308
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    58  163   443.452       936      0.0734213           -1         480        1458
+% Aggregated average delay (cycles): 443.452
+% Aggregated average throughput (flits/cycle): 0.0734213
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    74  164   177.229       647      0.0713247           -1         476        1422
+% Aggregated average delay (cycles): 177.229
+% Aggregated average throughput (flits/cycle): 0.0713247
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    90  165   115.038       355      0.0729474           -1         478        1458
+% Aggregated average delay (cycles): 115.038
+% Aggregated average throughput (flits/cycle): 0.0729474
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   106  166     83.21       172      0.0754424           -1         500        1505
+% Aggregated average delay (cycles): 83.21
+% Aggregated average throughput (flits/cycle): 0.0754424
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   122  167   51.9162       152      0.0786866           -1         513        1572
+% Aggregated average delay (cycles): 51.9162
+% Aggregated average throughput (flits/cycle): 0.0786866
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   138  168   38.9922       108      0.0775996           -1         515        1544
+% Aggregated average delay (cycles): 38.9922
+% Aggregated average throughput (flits/cycle): 0.0775996
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   154  169   14.8155        48      0.0708567           -1         477        1416
+% Aggregated average delay (cycles): 14.8155
+% Aggregated average throughput (flits/cycle): 0.0708567
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   170  170   2.42585        14      0.0711071           -1         472        1422
+% Aggregated average delay (cycles): 2.42585
+% Aggregated average throughput (flits/cycle): 0.0711071
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   186  171   48.3717       211       0.080358           -1         530        1607
+% Aggregated average delay (cycles): 48.3717
+% Aggregated average throughput (flits/cycle): 0.080358
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   202  172   60.1532       243      0.0754849           -1         496        1506
+% Aggregated average delay (cycles): 60.1532
+% Aggregated average throughput (flits/cycle): 0.0754849
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   218  173   80.5939       379      0.0742019           -1         490        1483
+% Aggregated average delay (cycles): 80.5939
+% Aggregated average throughput (flits/cycle): 0.0742019
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   234  174    94.719       399      0.0770732           -1         516        1540
+% Aggregated average delay (cycles): 94.719
+% Aggregated average throughput (flits/cycle): 0.0770732
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   250  175   94.9557       570      0.0759276           -1         497        1502
+% Aggregated average delay (cycles): 94.9557
+% Aggregated average throughput (flits/cycle): 0.0759276
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    11  176   1531.12      3168      0.0686672           -1         460        1373
+% Aggregated average delay (cycles): 1531.12
+% Aggregated average throughput (flits/cycle): 0.0686672
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    27  177   7247.23     13630      0.0201593           -1         133         400
+% Aggregated average delay (cycles): 7247.23
+% Aggregated average throughput (flits/cycle): 0.0201593
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    43  178   7222.06     13361      0.0240324           -1         166         480
+% Aggregated average delay (cycles): 7222.06
+% Aggregated average throughput (flits/cycle): 0.0240324
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    59  179   4974.48      9589      0.0392167           -1         259         781
+% Aggregated average delay (cycles): 4974.48
+% Aggregated average throughput (flits/cycle): 0.0392167
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    75  180   1476.82      2604      0.0694535           -1         459        1389
+% Aggregated average delay (cycles): 1476.82
+% Aggregated average throughput (flits/cycle): 0.0694535
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    91  181   222.934       507      0.0731658           -1         487        1462
+% Aggregated average delay (cycles): 222.934
+% Aggregated average throughput (flits/cycle): 0.0731658
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   107  182    136.69       380      0.0748561           -1         497        1496
+% Aggregated average delay (cycles): 136.69
+% Aggregated average throughput (flits/cycle): 0.0748561
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   123  183   103.433       302      0.0750038           -1         490        1500
+% Aggregated average delay (cycles): 103.433
+% Aggregated average throughput (flits/cycle): 0.0750038
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   139  184   75.9303       217      0.0694347           -1         459        1388
+% Aggregated average delay (cycles): 75.9303
+% Aggregated average throughput (flits/cycle): 0.0694347
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   155  185   37.7955       114      0.0728682           -1         489        1457
+% Aggregated average delay (cycles): 37.7955
+% Aggregated average throughput (flits/cycle): 0.0728682
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   171  186   32.6515       139      0.0809214           -1         528        1616
+% Aggregated average delay (cycles): 32.6515
+% Aggregated average throughput (flits/cycle): 0.0809214
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   187  187   2.54528        16      0.0773813           -1         519        1546
+% Aggregated average delay (cycles): 2.54528
+% Aggregated average throughput (flits/cycle): 0.0773813
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   203  188   43.0021       166      0.0710284           -1         477        1420
+% Aggregated average delay (cycles): 43.0021
+% Aggregated average throughput (flits/cycle): 0.0710284
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   219  189   166.849       622      0.0766228           -1         517        1531
+% Aggregated average delay (cycles): 166.849
+% Aggregated average throughput (flits/cycle): 0.0766228
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   235  190   110.558       437      0.0802241           -1         532        1604
+% Aggregated average delay (cycles): 110.558
+% Aggregated average throughput (flits/cycle): 0.0802241
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   251  191   69.9604       397      0.0768653           -1         505        1535
+% Aggregated average delay (cycles): 69.9604
+% Aggregated average throughput (flits/cycle): 0.0768653
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    12  192   3875.06      8670      0.0418962           -1         283         829
+% Aggregated average delay (cycles): 3875.06
+% Aggregated average throughput (flits/cycle): 0.0418962
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    28  193   8926.33     16976       0.010016           -1          66         200
+% Aggregated average delay (cycles): 8926.33
+% Aggregated average throughput (flits/cycle): 0.010016
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    44  194    8582.6     15732      0.0161705           -1         105         321
+% Aggregated average delay (cycles): 8582.6
+% Aggregated average throughput (flits/cycle): 0.0161705
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    60  195   6524.42     12892      0.0273183           -1         178         545
+% Aggregated average delay (cycles): 6524.42
+% Aggregated average throughput (flits/cycle): 0.0273183
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    76  196   2584.06      5144      0.0504792           -1         330        1006
+% Aggregated average delay (cycles): 2584.06
+% Aggregated average throughput (flits/cycle): 0.0504792
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    92  197   381.909      1129      0.0760576           -1         515        1521
+% Aggregated average delay (cycles): 381.909
+% Aggregated average throughput (flits/cycle): 0.0760576
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   108  198   173.698       563      0.0758524           -1         504        1515
+% Aggregated average delay (cycles): 173.698
+% Aggregated average throughput (flits/cycle): 0.0758524
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   124  199    108.27       354      0.0733116           -1         492        1460
+% Aggregated average delay (cycles): 108.27
+% Aggregated average throughput (flits/cycle): 0.0733116
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   140  200   73.4523       165      0.0807307           -1         535        1613
+% Aggregated average delay (cycles): 73.4523
+% Aggregated average throughput (flits/cycle): 0.0807307
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   156  201   42.4138       101      0.0704035           -1         464        1408
+% Aggregated average delay (cycles): 42.4138
+% Aggregated average throughput (flits/cycle): 0.0704035
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   172  202    26.856       100      0.0747837           -1         493        1495
+% Aggregated average delay (cycles): 26.856
+% Aggregated average throughput (flits/cycle): 0.0747837
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   188  203   9.62947        35      0.0711383           -1         475        1418
+% Aggregated average delay (cycles): 9.62947
+% Aggregated average throughput (flits/cycle): 0.0711383
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   204  204   2.52952        14      0.0817572           -1         542        1634
+% Aggregated average delay (cycles): 2.52952
+% Aggregated average throughput (flits/cycle): 0.0817572
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   220  205   68.0426       338      0.0804061           -1         516        1600
+% Aggregated average delay (cycles): 68.0426
+% Aggregated average throughput (flits/cycle): 0.0804061
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   236  206   69.4752       278        0.06964           -1         463        1385
+% Aggregated average delay (cycles): 69.4752
+% Aggregated average throughput (flits/cycle): 0.06964
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   252  207   62.0732       353      0.0723195           -1         478        1438
+% Aggregated average delay (cycles): 62.0732
+% Aggregated average throughput (flits/cycle): 0.0723195
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    13  208   7767.48     14685      0.0198353           -1         128         395
+% Aggregated average delay (cycles): 7767.48
+% Aggregated average throughput (flits/cycle): 0.0198353
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    29  209   9787.42     18119     0.00678835           -1          45         135
+% Aggregated average delay (cycles): 9787.42
+% Aggregated average throughput (flits/cycle): 0.00678835
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    45  210   9543.74     17374     0.00711361           -1          47         139
+% Aggregated average delay (cycles): 9543.74
+% Aggregated average throughput (flits/cycle): 0.00711361
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    61  211   7625.34     15191      0.0157743           -1         108         312
+% Aggregated average delay (cycles): 7625.34
+% Aggregated average throughput (flits/cycle): 0.0157743
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    77  212   7173.44     13080      0.0257513           -1         161         503
+% Aggregated average delay (cycles): 7173.44
+% Aggregated average throughput (flits/cycle): 0.0257513
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    93  213   5537.96     10476      0.0380255           -1         255         758
+% Aggregated average delay (cycles): 5537.96
+% Aggregated average throughput (flits/cycle): 0.0380255
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   109  214   1358.51      2930      0.0667168           -1         442        1331
+% Aggregated average delay (cycles): 1358.51
+% Aggregated average throughput (flits/cycle): 0.0667168
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   125  215   270.666       723      0.0752026           -1         500        1503
+% Aggregated average delay (cycles): 270.666
+% Aggregated average throughput (flits/cycle): 0.0752026
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   141  216   120.082       298        0.07557           -1         498        1508
+% Aggregated average delay (cycles): 120.082
+% Aggregated average throughput (flits/cycle): 0.07557
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   157  217   58.3566       160      0.0751188           -1         502        1502
+% Aggregated average delay (cycles): 58.3566
+% Aggregated average throughput (flits/cycle): 0.0751188
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   173  218   41.6036       147      0.0772278           -1         502        1540
+% Aggregated average delay (cycles): 41.6036
+% Aggregated average throughput (flits/cycle): 0.0772278
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   189  219   17.4784        54      0.0732562           -1         485        1463
+% Aggregated average delay (cycles): 17.4784
+% Aggregated average throughput (flits/cycle): 0.0732562
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   205  220   11.1023        58       0.071779           -1         479        1434
+% Aggregated average delay (cycles): 11.1023
+% Aggregated average throughput (flits/cycle): 0.071779
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   221  221   2.43271        10      0.0721893           -1         483        1437
+% Aggregated average delay (cycles): 2.43271
+% Aggregated average throughput (flits/cycle): 0.0721893
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   237  222   58.0157       245       0.077481           -1         510        1549
+% Aggregated average delay (cycles): 58.0157
+% Aggregated average throughput (flits/cycle): 0.077481
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   253  223   25.1107       184      0.0807002           -1         533        1609
+% Aggregated average delay (cycles): 25.1107
+% Aggregated average throughput (flits/cycle): 0.0807002
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    14  224   11243.8     18012     0.00968646           -1          62         190
+% Aggregated average delay (cycles): 11243.8
+% Aggregated average throughput (flits/cycle): 0.00968646
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    30  225   9713.45     17927     0.00445537           -1          31          87
+% Aggregated average delay (cycles): 9713.45
+% Aggregated average throughput (flits/cycle): 0.00445537
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    46  226   7771.11     16650     0.00859335           -1          56         168
+% Aggregated average delay (cycles): 7771.11
+% Aggregated average throughput (flits/cycle): 0.00859335
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    62  227    6878.5     15425      0.0152103           -1         102         302
+% Aggregated average delay (cycles): 6878.5
+% Aggregated average throughput (flits/cycle): 0.0152103
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    78  228    7314.1     13708      0.0250113           -1         165         500
+% Aggregated average delay (cycles): 7314.1
+% Aggregated average throughput (flits/cycle): 0.0250113
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    94  229   2866.74      5718      0.0571543           -1         382        1138
+% Aggregated average delay (cycles): 2866.74
+% Aggregated average throughput (flits/cycle): 0.0571543
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   110  230   224.873       820      0.0790619           -1         526        1581
+% Aggregated average delay (cycles): 224.873
+% Aggregated average throughput (flits/cycle): 0.0790619
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   126  231   110.672       317      0.0650195           -1         418        1300
+% Aggregated average delay (cycles): 110.672
+% Aggregated average throughput (flits/cycle): 0.0650195
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   142  232   76.7286       230      0.0706202           -1         468        1404
+% Aggregated average delay (cycles): 76.7286
+% Aggregated average throughput (flits/cycle): 0.0706202
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   158  233   50.9026       134       0.081845           -1         534        1636
+% Aggregated average delay (cycles): 50.9026
+% Aggregated average throughput (flits/cycle): 0.081845
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   174  234   34.1184       100      0.0782891           -1         515        1565
+% Aggregated average delay (cycles): 34.1184
+% Aggregated average throughput (flits/cycle): 0.0782891
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   190  235   19.5868        53      0.0727896           -1         484        1444
+% Aggregated average delay (cycles): 19.5868
+% Aggregated average throughput (flits/cycle): 0.0727896
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   206  236   14.0172        44      0.0699689           -1         465        1397
+% Aggregated average delay (cycles): 14.0172
+% Aggregated average throughput (flits/cycle): 0.0699689
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   222  237   6.89121        22      0.0707814           -1         478        1414
+% Aggregated average delay (cycles): 6.89121
+% Aggregated average throughput (flits/cycle): 0.0707814
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   238  238    2.4181        16        0.06924           -1         464        1383
+% Aggregated average delay (cycles): 2.4181
+% Aggregated average throughput (flits/cycle): 0.06924
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   254  239   15.0218       114      0.0687153           -1         459        1373
+% Aggregated average delay (cycles): 15.0218
+% Aggregated average throughput (flits/cycle): 0.0687153
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    15  240   8219.87     17488     0.00684621           -1          45         136
+% Aggregated average delay (cycles): 8219.87
+% Aggregated average throughput (flits/cycle): 0.00684621
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    31  241   7817.07     17606     0.00427125           -1          28          81
+% Aggregated average delay (cycles): 7817.07
+% Aggregated average throughput (flits/cycle): 0.00427125
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    47  242   8252.49     16680      0.0068775           -1          43         127
+% Aggregated average delay (cycles): 8252.49
+% Aggregated average throughput (flits/cycle): 0.0068775
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    63  243   8442.11     16960     0.00965866           -1          64         191
+% Aggregated average delay (cycles): 8442.11
+% Aggregated average throughput (flits/cycle): 0.00965866
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    79  244   6444.56     12961      0.0266954           -1         178         533
+% Aggregated average delay (cycles): 6444.56
+% Aggregated average throughput (flits/cycle): 0.0266954
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+    95  245   4972.87      8984      0.0447941           -1         297         894
+% Aggregated average delay (cycles): 4972.87
+% Aggregated average throughput (flits/cycle): 0.0447941
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   111  246   281.244       908      0.0733197           -1         496        1465
+% Aggregated average delay (cycles): 281.244
+% Aggregated average throughput (flits/cycle): 0.0733197
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   127  247   128.053       404      0.0707101           -1         468        1413
+% Aggregated average delay (cycles): 128.053
+% Aggregated average throughput (flits/cycle): 0.0707101
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   143  248   82.2653       209      0.0722072           -1         475        1444
+% Aggregated average delay (cycles): 82.2653
+% Aggregated average throughput (flits/cycle): 0.0722072
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   159  249   52.1106       145      0.0676507           -1         452        1352
+% Aggregated average delay (cycles): 52.1106
+% Aggregated average throughput (flits/cycle): 0.0676507
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   175  250   38.5906       131      0.0779169           -1         508        1556
+% Aggregated average delay (cycles): 38.5906
+% Aggregated average throughput (flits/cycle): 0.0779169
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   191  251   23.8089        55      0.0746575           -1         497        1493
+% Aggregated average delay (cycles): 23.8089
+% Aggregated average throughput (flits/cycle): 0.0746575
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   207  252    18.238        43      0.0762305           -1         521        1524
+% Aggregated average delay (cycles): 18.238
+% Aggregated average throughput (flits/cycle): 0.0762305
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   223  253   11.2047        25      0.0765165           -1         508        1520
+% Aggregated average delay (cycles): 11.2047
+% Aggregated average throughput (flits/cycle): 0.0765165
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   239  254   6.99421        20      0.0783735           -1         518        1567
+% Aggregated average delay (cycles): 6.99421
+% Aggregated average throughput (flits/cycle): 0.0783735
+%  src  dst delay avg delay max     throughput       energy    received    received
+%              cycles    cycles    flits/cycle        Joule     packets       flits
+   255  255   2.47789        13      0.0730862           -1         475        1455
+% Aggregated average delay (cycles): 2.47789
+% Aggregated average throughput (flits/cycle): 0.0730862
+];
+
+max_delay = [
+       15    31    58   461   236   395   455   439   715  1102  4236  9995 11492 13205 16777  8258
+       85     9    33   323   269   351   560  1115  6919 10106 14591 15714 16505 16787 16664 10036
+      172   138    12    91   148   391   461   479   714  1230  7978 11604 14481 15985 16639 14847
+      232   199   322    12   123   522   568   879  2213  6811 10593 13132 14678 16150 16155  4545
+      247   217   160   101    14   131   220   270   314   545   875  2091  8422 12155 15426  9143
+      321   322   445   222   132    11   128   311   476   518  1213  5686  9272 11947 12187  1211
+      265   407   342   187   192    53    16   176   185   278   412   612   853  3045  7514  1286
+      315   457   696   414   180   115   122    11   121   332   383   742  1253  7254  2220   916
+      438   806   726   282   355   111   100    41    12   184   199   253   453   582   496   496
+      545  3224  3360   760   360   224   217   146   171    14   123   350   421   556   571   542
+     1669 10319  7593   936   647   355   172   152   108    48    14   211   243   379   399   570
+     3168 13630 13361  9589  2604   507   380   302   217   114   139    16   166   622   437   397
+     8670 16976 15732 12892  5144  1129   563   354   165   101   100    35    14   338   278   353
+    14685 18119 17374 15191 13080 10476  2930   723   298   160   147    54    58    10   245   184
+    18012 17927 16650 15425 13708  5718   820   317   230   134   100    53    44    22    16   114
+    17488 17606 16680 16960 12961  8984   908   404   209   145   131    55    43    25    20    13
+];
+
+routed_flits = [
+         6765      6680      6772      6974      7252      7251      7348      7081      6453      5677      3538      2395      1044       682       288         0
+         8764     13127     13059     13318     12593     11574      9813      8000      5523      4094      1772      1802       575       849       242       902
+        10137     13214     21137     20483     18436     16220     13419     11189      7464      5881      2888      2729      1062      1339       473      1810
+        10890     14205     22132     23817     20461     17323     14574     12299      8696      7147      4015      3496      1493      1714       693      2137
+        11290     13932     20412     17767     24491     22179     19823     17448     13904     11506      7763      5637      2794      2596      1533      3643
+        11381     13068     18101     16532     25740     25394     21916     18338     14996     12279      8852      7082      3924      3460      2482      4197
+        11057     11225     15107     14425     21440     18764     25155     22038     19726     17081     13429     10988      7391      5682      4793      5515
+        10268      8410     11462     11373     17880     16807     25554     25532     22224     18303     14923     12546      9483      8049      6456      6466
+         8823      5710      8191      8695     14700     14259     21220     18460     25085     22031     19703     17026     13885     11314      7856      7542
+         6868      3497      5414      6295     11311     11560     18030     17103     25993     25193     22012     18328     15293     12422      7240      8038
+         4614      2243      3502      4270      8363      9380     15039     14772     21432     18054     24096     20579     17470     14196      7504      8733
+         2750      1453      2189      2804      5240      6782     11394     11316     16834     15546     22824     22461     17949     14369      7239      8767
+         1489       999      1445      1894      3405      4842      8596      8924     13117     12882     16930     15105     17248     14084      7104      8691
+          785       625       976      1266      2277      3460      5755      6056      8736      8912     11144     10910     13345     14813      7638      8201
+          421       386       668       954      1760      2686      4339      5583      7324      8299      9176     10242     10384     11274     10007      7122
+            0       782      1635      1802      3055      3407      4168      4705      4747      5141      4373      4705      3948      4214      3521      3346
+];
+power_dynamic = [
+	0.000000e+00	 % antenna_buffer_front_pwr_d
+	0.000000e+00	 % antenna_buffer_pop_pwr_d
+	0.000000e+00	 % antenna_buffer_push_pwr_d
+	0.000000e+00	 % buffer_from_tile_front_pwr_d
+	0.000000e+00	 % buffer_from_tile_pop_pwr_d
+	0.000000e+00	 % buffer_from_tile_push_pwr_d
+	0.000000e+00	 % buffer_front_pwr_d
+	3.275364e-06	 % buffer_pop_pwr_d
+	4.773004e-06	 % buffer_push_pwr_d
+	0.000000e+00	 % buffer_to_tile_front_pwr_d
+	0.000000e+00	 % buffer_to_tile_pop_pwr_d
+	0.000000e+00	 % buffer_to_tile_push_pwr_d
+	1.271986e-06	 % crossbar_pwr_d
+	0.000000e+00	 % link_r2h_pwr_d
+	9.931667e-06	 % link_r2r_pwr_d
+	5.571379e-07	 % ni_pwr_d
+	0.000000e+00	 % routing_pwr_d
+	2.777972e-07	 % selection_pwr_d
+	0.000000e+00	 % wireless_dynamic_rx_pwr
+	0.000000e+00	 % wireless_snooping
+	0.000000e+00	 % wireless_tx
+];
+power_static = [
+	0.000000e+00	 % antenna_buffer_pwr_s
+	0.000000e+00	 % buffer_from_tile_pwr_s
+	1.146880e-04	 % buffer_router_pwr_s
+	0.000000e+00	 % buffer_to_tile_pwr_s
+	7.628800e-06	 % crossbar_pwr_s
+	1.671168e-07	 % link_r2h_pwr_s
+	8.806400e-06	 % ni_pwr_s
+	0.000000e+00	 % routing_pwr_s
+	5.632000e-07	 % selection_pwr_s
+	0.000000e+00	 % transceiver_rx_pwr_biasing
+	0.000000e+00	 % transceiver_rx_pwr_s
+	0.000000e+00	 % transceiver_tx_pwr_biasing
+	0.000000e+00	 % transceiver_tx_pwr_s
+];
+wirxsleep_stats = [
+%	Total Sleep Cycles (T), antenna BufferRX sleep cycles (ARX), BufferToTile sleep cycles (TTRX) 
+%	HUB	T	ARX	TTRX	
+	0	0.00	-nan	-nan
+	1	0.00	-nan	-nan
+	2	0.00	-nan	-nan
+	3	0.00	-nan	-nan
+	4	0.00	-nan	-nan
+	5	0.00	-nan	-nan
+	6	0.00	-nan	-nan
+	7	0.00	-nan	-nan
+	8	0.00	-nan	-nan
+	9	0.00	-nan	-nan
+	10	0.00	-nan	-nan
+	11	0.00	-nan	-nan
+	12	0.00	-nan	-nan
+	13	0.00	-nan	-nan
+	14	0.00	-nan	-nan
+	15	0.00	-nan	-nan
+];
+% Total received packets: 105357
+% Total received flits: 316628
+% Global average delay (cycles): 706.041
+% Global average throughput (flits/cycle): 0.06199
+% Throughput (flits/cycle/IP): 0.0650962
+% Max delay (cycles): 18119
+% Total energy (J): 0.00015194
+% 	Dynamic energy (J): 2.0087e-05
+% 	Static energy (J): 0.000131854

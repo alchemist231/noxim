@@ -299,7 +299,7 @@ void GlobalStats::showStats(std::ostream & out, bool detailed)
 	showPowerBreakDown(out);
 	showWirxStats(out);
     }
-
+    out << "------->> Global Statistics <<--------" <<endl;
     out << "% Total received packets: " << getReceivedPackets() << endl;
     out << "% Total received flits: " << getReceivedFlits() << endl;
     out << "% Global average delay (cycles): " << getAverageDelay() <<
