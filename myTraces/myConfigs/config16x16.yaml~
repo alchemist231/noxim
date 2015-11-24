@@ -17,7 +17,7 @@ r2r_link_length: 1.0
 #   ODD_EVEN
 #   DYAD
 #   TABLE_BASED
-routing_algorithm: ODD_EVEN
+routing_algorithm: XY
 routing_table_filename: ""
 
 # Routing specific parameters
@@ -96,7 +96,7 @@ clock_period_ps: 1000
 reset_time: 1000
 simulation_time: 20000
 stats_warm_up_time: 1000
-detailed: false
+detailed: true
 max_volume_to_be_drained: 0
 show_buffer_stats: false
 
@@ -117,7 +117,8 @@ trace_filename: ""
 
 min_packet_size: 2
 max_packet_size: 4
-packet_injection_rate: 0.01
+# PIR
+packet_injection_rate: 0.0053
 probability_of_retransmission: 0.01
 
 # Traffic distribution:
@@ -129,8 +130,8 @@ probability_of_retransmission: 0.01
 #   TRAFFIC_BIT_REVERSAL
 #   TRAFFIC_SHUFFLE
 #   TRAFFIC_BUTTERFLY
-traffic_distribution: TRAFFIC_RANDOM
-traffic_table_filename: "t.txt"
+traffic_distribution: TRAFFIC_TABLE_BASED
+traffic_table_filename: "trafficTranspose.txt"
 
 
 Energy:
