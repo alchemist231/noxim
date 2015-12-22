@@ -73,6 +73,9 @@ class Stats:
 	def getEnergy(self):
 		return self.Total_energy
 
+	def getThroughput(self):
+		return self.Global_average_throughput
+
 
 import os
 
@@ -91,7 +94,8 @@ for each in pir:
 	currentStats = Stats(each)
 	delay  = currentStats.getDelay()
 	energy = currentStats.getEnergy()
+	throughput = currentStats.getThroughput()
 	E_D = energy*delay
-	print each,delay,energy,E_D,E_D*delay
+	print each,delay,energy,E_D,E_D*delay,throughput
 	
 

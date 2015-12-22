@@ -40,8 +40,10 @@ class Stats:
 			if(maxDelayFlag == True and line!='];\n'):
 				self.maxDelay.append(map(int,line.split()))
 
+
 			if(maxFlitFlag == True and line!='];\n'):
 				self.routedFlits.append(map(int,line.split()))
+				
 
 			if(line=='max_delay = [\n'):
 				maxDelayFlag = True
@@ -49,7 +51,7 @@ class Stats:
 			if(line=='routed_flits = [\n'):
 				maxFlitFlag = True
 
-			if(line=='];'):
+			if(line=='];\n'):
 				maxDelayFlag = False
 				maxFlitFlag  = False
 
@@ -68,6 +70,12 @@ class Stats:
 	def getRoutedFlits(self):
 		return self.routedFlits
 
+	def getEnergy(self):
+		return self.Total_energy
+
+	def getThroughput(self):
+		return self.Global_average_throughput
+
 
 import os
 
@@ -84,8 +92,10 @@ stats = []
 avs = []
 for each in pir:
 	currentStats = Stats(each)
-	print each,currentStats.getDelay()
-	if pir 0.014 :
-		avs=currentStats.getRoutedFlits()
+	delay  = currentStats.getDelay()
+	energy = currentStats.getEnergy()
+	throughput = currentStats.getThroughput()
+	E_D = energy*delay
+	print each,delay,energy,E_D,E_D*delay,throughput
+	
 
-print avs

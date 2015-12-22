@@ -35,7 +35,7 @@ print pirList
 
 for each in pirList:
 	currentStat=traceStats.Stats(each,savePath)
-	simStat.append((each,currentStat.getDelay()))
+	simStat.append((each,currentStat.getMaxDelay()))
 
 for each in simStat:
 	p,d=each

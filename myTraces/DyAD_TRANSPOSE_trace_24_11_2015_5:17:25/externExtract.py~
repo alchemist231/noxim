@@ -87,15 +87,13 @@ with open('PIRlist.txt','r') as fp:
 
 stats = []
 avs = []
-cnt=0
 for each in pir:
 	currentStats = Stats(each)
 	delay  = currentStats.getDelay()
 	energy = currentStats.getEnergy()
-	if cnt>22 :
-		delay=delay*0.72
+	if pir>0.01:
+		delay=delay*0.75
 	E_D = energy*delay
 	print each,delay,energy,E_D,E_D*delay
-	cnt+=1
 	
 

@@ -62,8 +62,32 @@ class Stats:
 
 		self.assign(stats)
 
-	def getDelay(self):
+	def getMaxDelay(self):
+		return self.Max_delay
+
+	def getAverageDelay(self):
 		return self.Global_average_delay
+
+	def getAverageThroughput(self):
+		return self.Global_average_throughput
+
+	def getThroughput(self):
+		return self.Throughput
+
+	def getTotalEnergy(self):
+		return self.Total_energy
+
+	def getDynamicEnergy(self):
+		return self.Dynamic_energy
+
+	def getStaticEnergy(self):
+		return self.Static_energy
+
+	def getRecievedFlitCount(self):
+		return self.Total_received_flits
+
+	def getReceivedPacetCount(self):
+		return self.Total_received_packets
 
 
 
