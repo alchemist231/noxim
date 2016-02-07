@@ -117,6 +117,15 @@ SC_MODULE(Router)
 	    cerr << " FATAL: invalid selection strategy -sel " << GlobalParams::selection_strategy << ", check with noxim -help" << endl;
 	    exit(-1);
 	}
+
+    //configure ACO table ==> 6 'Direction' x destination nodes table
+    for(int i=0;i<6;i++)
+        {
+            ACO_table.push_back(vector<int> (GlobalParams::mesh_dim_x*GlobalParams::mesh_dim_y,0));
+            cout<<"configuring ACO table on node : "<<local_id<<endl;
+
+        }
+
     }
 
   private:
@@ -134,6 +143,8 @@ SC_MODULE(Router)
     int NoPScore(const NoP_data & nop_data, const vector <int> & nop_channels) const;
     int reflexDirection(int direction) const;
     int getNeighborId(int _id, int direction) const;
+
+    vector<vector<int> > ACO_table ;
 
   public:
     unsigned int local_drained;

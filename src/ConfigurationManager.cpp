@@ -11,6 +11,8 @@
 #include "ConfigurationManager.h"
 #include <systemc.h> //Included for the function time() 
 
+void showConfig();
+
 void loadConfiguration() {
 
     cout << "Loading configuration from file " << GlobalParams::config_filename << endl;
@@ -87,6 +89,7 @@ void loadConfiguration() {
     }
 
     GlobalParams::power_configuration = config["Energy"].as<PowerConfig>();
+    showConfig();
 }
 
 void showHelp(char selfname[])
