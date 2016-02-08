@@ -19,4 +19,7 @@ int Selection_ACO::apply(Router * router, const vector < int >&directions, const
 
 }
 
-void Selection_ACO::perCycleUpdate(Router * router){ }
+void Selection_ACO::perCycleUpdate(Router * router)
+{
+	
+}

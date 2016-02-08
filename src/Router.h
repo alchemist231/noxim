@@ -119,7 +119,8 @@ SC_MODULE(Router)
 	}
 
     //configure ACO table ==> 6 'Direction' x destination nodes table
-    for(int i=0;i<6;i++)
+    int outputChannelDirections = 6 ;
+    for(int i=0;i<outputChannelDirections;i++)
         {
             ACO_table.push_back(vector<int> (GlobalParams::mesh_dim_x*GlobalParams::mesh_dim_y,0));
             cout<<"configuring ACO table on node : "<<local_id<<endl;
