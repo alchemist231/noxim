@@ -12,6 +12,7 @@
 #define _DATASTRUCS_H__
 
 #include <systemc.h>
+#include <queue>
 #include "GlobalParams.h"
 
 // Coord -- XY coordinates type of the Tile inside the Mesh
@@ -177,5 +178,12 @@ typedef struct
     PowerBreakdownEntry breakdown[NO_BREAKDOWN_ENTRIES_D+NO_BREAKDOWN_ENTRIES_S];
 } PowerBreakdown;
 
+
+
+struct AntPacket : Packet
+{
+    queue<>
+
+};
 
 #endif

@@ -430,3 +430,21 @@ void Router::ShowBuffersStats(std::ostream & out)
   for (int i=0; i<DIRECTIONS+2; i++)
     buffer[i].ShowStats(out);
 }
+
+void Router::initialiseACOTable()
+{
+	Coord current_coord = id2Coord(this->local_id);
+	Coord dest_coord;
+	float manhattanDist ;
+	// Initially ACO_table => vector of vector of OutputChannelDirections x No of destination nodes , initialised with 0
+	for(int outChannel=0; outChannel< this->outputChannelDirections; outChannel++)
+	{
+		for(int dest=0; dest<GlobalParams::mesh_dim_x*GlobalParams::mesh_dim_y ; dest++)
+		{
+			dest_coord    = id2Coord(dest);
+			manhattanDist = manhattanDistance(current_coord,dest_coord); 
+
+			ACO_table[outChannel][dest] = manhattanDist;
+		}
+	}
+}

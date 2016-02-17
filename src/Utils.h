@@ -6,6 +6,7 @@
 
 #include "DataStructs.h"
 #include <iomanip>
+#include <math.h>
 
 #ifdef DEBUG
 
@@ -221,6 +222,11 @@ inline void printMap(string label, const map<string,double> & m,std::ostream & o
 	out << "\t" << std::scientific << i->second << "\t % " << i->first << endl;
 
     out << "];" << endl;
+}
+
+inline float manhattanDistance(Coord pt1, Coord pt2)
+{
+    return abs(pt1.x-pt2.x) + abs(pt1.y-pt2.y);
 }
 
 #endif
