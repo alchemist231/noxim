@@ -101,6 +101,9 @@ void Router::txProcess()
 
 		  int o = route(route_data);
 
+		  // Note: visited appended after resolving route
+		  route_data.visited.push_back(route_data.current_id);
+
 		  LOG << " checking reservation availability of direction " << o << " for flit " << flit << endl;
 
 		  if (reservation_table.isAvailable(o)) 
@@ -437,14 +440,15 @@ void Router::initialiseACOTable()
 	Coord dest_coord;
 	float manhattanDist ;
 	// Initially ACO_table => vector of vector of OutputChannelDirections x No of destination nodes , initialised with 0
-	for(int outChannel=0; outChannel< this->outputChannelDirections; outChannel++)
+	// outputChannelDirections = 4 + 1
+	for(int outChannel=0; outChannel< outputChannelDirections; outChannel++)
 	{
 		for(int dest=0; dest<GlobalParams::mesh_dim_x*GlobalParams::mesh_dim_y ; dest++)
 		{
 			dest_coord    = id2Coord(dest);
 			manhattanDist = manhattanDistance(current_coord,dest_coord); 
 
-			ACO_table[outChannel][dest] = manhattanDist;
+			aco_table[outChannel][dest] = manhattanDist;
 		}
 	}
 }

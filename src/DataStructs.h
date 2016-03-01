@@ -70,7 +70,15 @@ struct RouteData {
     int src_id;
     int dst_id;
     int dir_in;			// direction from which the packet comes from
+    vector<int> visited;// to check if ACO works , later a derived class/struct would be used   
 };
+
+// Ant Colony type derived RouteData containing visited nodes list
+struct AntRouteData : RouteData
+{
+    vector<int> visited;
+};
+
 
 struct ChannelStatus {
     int free_slots;		// occupied buffer slots
@@ -179,11 +187,5 @@ typedef struct
 } PowerBreakdown;
 
 
-
-struct AntPacket : Packet
-{
-    queue<>
-
-};
 
 #endif

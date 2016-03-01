@@ -1,6 +1,6 @@
 #include "Routing_ACO_TABLE.h"
 
-int maximum(int x, int y) { return x>y ? x:y;}
+float maximum(float x, float y) { return x>y ? x:y;}
 
 RoutingAlgorithmsRegister Routing_ACO_TABLE::routingAlgorithmsRegister("ACO_TABLE", getInstance());
 
@@ -22,18 +22,21 @@ vector<int> Routing_ACO_TABLE::route(Router * router, const RouteData & routeDat
     //Number of output channels => 4 Directions(N/E/S/W) + local hub + wireless
     int numberOfOutputChannels=router->outputChannelDirections;
 
+    vector<int> directions;
+
     // could have used iterator in the following for loop than above numberOfOutputChannels usage
     for(int i=0 ; i<numberOfOutputChannels ; i++)
     {
-        max = maximum(max,router->ACO_table[i][destinationID]);
+        directions.push_back(router->aco_table[i][destinationID]);
     }
 
-    
+    //Since RouteData const , append visited node in router.cpp :: txProcess() itself
+    //routeData.visited.push_back(routeData.current_id);
 
-    return admissibleOutputsSet2Vector(ao);
+    return directions;
 }
 
-vector<int> backwardRoute::route(Router * route, const RouteData & routeData)
+vector<int> Routing_ACO_TABLE::backwardRoute(Router * route, const RouteData & routeData)
 {
     
 }

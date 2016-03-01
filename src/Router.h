@@ -88,6 +88,7 @@ SC_MODULE(Router)
     unsigned int getFlitsCount();	// Returns the number of flits into the router
 
     void initialiseACOTable();
+    int outputChannelDirections ;
 
     // Constructor
 
@@ -121,11 +122,11 @@ SC_MODULE(Router)
 	}
 
     //configure ACO table ==> 6 'Direction' x destination nodes table
-    int outputChannelDirections = DIRECTIONS + 1 ;
+    outputChannelDirections = DIRECTIONS + 1 ;
     for(int i=0;i<outputChannelDirections;i++)
         {
             // Initialising ACO with 0
-            ACO_table.push_back(vector<int> (GlobalParams::mesh_dim_x*GlobalParams::mesh_dim_y,0));
+            aco_table.push_back(vector<float> (GlobalParams::mesh_dim_x*GlobalParams::mesh_dim_y,0));
             // If initialising ACO Table using euclidean/manhattan distance 
             initialiseACOTable();
 
@@ -149,13 +150,16 @@ SC_MODULE(Router)
     int reflexDirection(int direction) const;
     int getNeighborId(int _id, int direction) const;
 
-    vector<vector<float> > ACO_table ;
+    
 
   public:
     unsigned int local_drained;
 
     bool inCongestion();
     void ShowBuffersStats(std::ostream & out);
+
+    //ACO based additions, ACO table ==> 'Direction' x destination nodes table
+    vector<vector<float> > aco_table ;
 };
 
 #endif
