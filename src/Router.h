@@ -127,10 +127,11 @@ SC_MODULE(Router)
         {
             // Initialising ACO with 0
             aco_table.push_back(vector<float> (GlobalParams::mesh_dim_x*GlobalParams::mesh_dim_y,0));
-            // If initialising ACO Table using euclidean/manhattan distance 
-            initialiseACOTable();
-
+            
         }
+    // If initialising ACO Table using euclidean/manhattan distance 
+    initialiseACOTable();
+
 
     }
 
