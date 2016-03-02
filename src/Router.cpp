@@ -98,11 +98,10 @@ void Router::txProcess()
 		  route_data.src_id = flit.src_id;
 		  route_data.dst_id = flit.dst_id;
 		  route_data.dir_in = i;
+		  route_data.visited.push_back(route_data.current_id);
 
 		  int o = route(route_data);
-
-		  // Note: visited appended after resolving route
-		  route_data.visited.push_back(route_data.current_id);
+		  
 
 		  LOG << " checking reservation availability of direction " << o << " for flit " << flit << endl;
 

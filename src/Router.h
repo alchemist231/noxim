@@ -148,18 +148,23 @@ SC_MODULE(Router)
     void NoP_report() const;
     int NoPScore(const NoP_data & nop_data, const vector <int> & nop_channels) const;
     int reflexDirection(int direction) const;
-    int getNeighborId(int _id, int direction) const;
 
+    // Following function made public
+    // int getNeighborId(int _id, int direction) const;
     
-
   public:
     unsigned int local_drained;
 
     bool inCongestion();
     void ShowBuffersStats(std::ostream & out);
 
-    //ACO based additions, ACO table ==> 'Direction' x destination nodes table
+    // ACO based additions, ACO table ==> 'Direction' x destination nodes table
     vector<vector<float> > aco_table ;
+
+    // Made getNeighborId function public to use in Routing_ACO_TABLE.cpp :: route function
+    // Unable to comprehend , why no error "error: 'getNeighborId' is a private member of 'Router'" 
+    // for use in Selection_NOP.cpp :: apply function thrown 
+    int getNeighborId(int _id, int direction) const;
 };
 
 #endif

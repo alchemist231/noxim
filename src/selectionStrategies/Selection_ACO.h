@@ -11,6 +11,7 @@ class Selection_ACO : SelectionStrategy {
 	public:
         int apply(Router * router, const vector < int >&directions, const RouteData & route_data);
         void perCycleUpdate(Router * router);
+        void perCycleAcoTableUpdate(Router * router,const int destinationId,const int chosenDirection);
 
 		static Selection_ACO * getInstance();
 
@@ -20,6 +21,9 @@ class Selection_ACO : SelectionStrategy {
 
 		static Selection_ACO * selection_ACO;
 		static SelectionStrategiesRegister selectionStrategiesRegister;
+
+		float reinforcement_factor;
+		float alpha;
 };
 
 #endif

@@ -13,6 +13,7 @@ class Routing_ACO_TABLE : RoutingAlgorithm {
 	public:
 		vector<int> route(Router * router, const RouteData & routeData);
 		vector<int> backwardRoute(Router * router, const RouteData & routeData);
+		bool neighborInVisited(const vector<int> visited, const int neighborID);
 
 		static Routing_ACO_TABLE * getInstance();
 
